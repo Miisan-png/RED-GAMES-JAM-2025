@@ -23,6 +23,13 @@ public class Game_Manager : MonoBehaviour
     public float distanceMultiplier = 1f;
     
     private float distanceTimer = 0f;
+
+
+    void Start()
+    {
+        AddTickets(5); 
+    }
+
     
     void Awake()
     {
@@ -68,12 +75,15 @@ public class Game_Manager : MonoBehaviour
         currentCoins += amount;
         totalCoins += amount;
 
+        UpdateCoinsUI();
+
         if (landmarkManager != null)
         {
             landmarkManager.OnCoinsUpdated(amount);
         }
-}
-    
+    }
+
+        
     public void AddTickets(int amount)
     {
         currentTickets += amount;
@@ -81,14 +91,14 @@ public class Game_Manager : MonoBehaviour
         UpdateTicketsUI();
     }
     
-    void UpdateTicketsUI()
+        void UpdateTicketsUI()
     {
         if (ticketsUI != null)
         {
-            ticketsUI.text = $"{currentCoins}";
+            ticketsUI.text = currentTickets.ToString("D3");
         }
     }
-    
+
     public void GameOver()
     {
         if (currentDistance > highScore)
@@ -121,6 +131,15 @@ public class Game_Manager : MonoBehaviour
         totalCoins = PlayerPrefs.GetInt("TotalCoins", 0);
         totalTickets = PlayerPrefs.GetInt("TotalTickets", 0);
     }
+
+    void UpdateCoinsUI()
+    {
+        if (ticketsUI != null)
+        {
+            ticketsUI.text = currentCoins.ToString("D3"); 
+        }
+    }
+
     
     public int GetCurrentDistance()
     {

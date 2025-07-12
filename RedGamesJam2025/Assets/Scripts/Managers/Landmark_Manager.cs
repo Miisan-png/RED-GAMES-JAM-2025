@@ -49,10 +49,12 @@ public class Landmark_Manager : MonoBehaviour
     [Header("Flash Settings")]
     public float flashDuration = 0.8f;
     public float flashIntensity = 0.8f;
+    public float flashDelay = 0.0f;
     
     [Header("Postcard Animation Settings")]
     public float postCardAnimationDuration = 1.0f;
     public float postCardDisplayDuration = 2.0f;
+    public float postCardDelay = 0.0f;
     public Ease postCardEase = Ease.OutBack;
 
     private Tween progressBarFadeTween;
@@ -216,42 +218,46 @@ public class Landmark_Manager : MonoBehaviour
     isPostCardAnimating = true;
     coinCounterForBar = 0;
 
-    if (defaultParallaxBackground != null)
-        defaultParallaxBackground.SetActive(false);
-
-    foreach (var lm in landmarks)
-    {
-        if (lm.parallaxBackground != null)
-            lm.parallaxBackground.SetActive(false);
-    }
-
-    if (landmark.parallaxBackground != null)
-        landmark.parallaxBackground.SetActive(true);
-
     Sequence unlockSequence = DOTween.Sequence();
 
     unlockSequence.Append(landmark.landmarkImage.DOColor(Color.white, juicyEffectDuration).SetEase(Ease.OutQuad));
     unlockSequence.Join(landmark.landmarkImage.transform.DOPunchScale(Vector3.one * juicyEffectScale, juicyEffectDuration, 10, 1));
 
+    unlockSequence.AppendInterval(flashDelay);
+    unlockSequence.AppendCallback(() => {
+        if (landmark.screenFlashPanel != null)
+        {
+            FlashScreen(landmark.screenFlashPanel);
+        }
+    });
+
+    unlockSequence.AppendCallback(() => {
+        if (defaultParallaxBackground != null)
+            defaultParallaxBackground.SetActive(false);
+
+        foreach (var lm in landmarks)
+        {
+            if (lm.parallaxBackground != null)
+                lm.parallaxBackground.SetActive(false);
+        }
+
+        if (landmark.parallaxBackground != null)
+            landmark.parallaxBackground.SetActive(true);
+    });
+
+    unlockSequence.AppendInterval(postCardDelay);
+    unlockSequence.AppendCallback(() => {
+        if (landmark.postCardGameObject != null)
+        {
+            ShowPostCard(landmark);
+        }
+    });
+
     unlockSequence.AppendCallback(() => {
         ShowProgressBarForUnlock();
     });
 
-    unlockSequence.AppendInterval(progressBarDisplayDuration + progressBarFadeDuration * 2);
-
-    if (landmark.screenFlashPanel != null)
-    {
-        unlockSequence.AppendCallback(() => FlashScreen(landmark.screenFlashPanel));
-    }
-
-    unlockSequence.AppendInterval(flashDuration);
-
-    if (landmark.postCardGameObject != null)
-    {
-        unlockSequence.AppendCallback(() => ShowPostCard(landmark));
-    }
-
-    unlockSequence.AppendInterval(postCardAnimationDuration + postCardDisplayDuration);
+    unlockSequence.AppendInterval(progressBarDisplayDuration + progressBarFadeDuration * 2 + flashDuration + postCardAnimationDuration + postCardDisplayDuration);
     unlockSequence.AppendCallback(() => {
         isPostCardAnimating = false;
     });
