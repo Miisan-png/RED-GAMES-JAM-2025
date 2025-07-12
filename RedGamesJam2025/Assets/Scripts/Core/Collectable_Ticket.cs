@@ -35,7 +35,7 @@ public class Collectable_Ticket : MonoBehaviour
         
         if (Game_Manager.Instance != null)
         {
-            Game_Manager.Instance.AddTickets(ticketValue);
+            Game_Manager.Instance.AddCoins(ticketValue);
         }
         
         StartCoroutine(PlayCollectEffect());
