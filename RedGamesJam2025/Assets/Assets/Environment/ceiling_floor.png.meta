@@ -1,10 +1,13 @@
 fileFormatVersion: 2
-guid: 3d66f2720cfb5674d8f8d70fe7aa5803
+guid: beb0beeb1f0a4f34f983f57ffa1b05e8
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 8681008312180965034
-    second: walk_1_0
+      213: -7432764896283110827
+    second: ceiling_floor_0
+  - first:
+      213: -187167441087738688
+    second: ceiling_floor_1
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -37,7 +40,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -126,13 +129,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: walk_1_0
+      name: ceiling_floor_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 207
-        width: 1070
-        height: 666
+        y: 0
+        width: 1922
+        height: 1080
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -141,8 +144,30 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: aae72c3e013297870800000000000000
-      internalID: 8681008312180965034
+      spriteID: 5525d0215b389d890800000000000000
+      internalID: -7432764896283110827
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ceiling_floor_1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 1922
+        height: 203
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0cc4278343c076df0800000000000000
+      internalID: -187167441087738688
       vertices: []
       indices: 
       edges: []
@@ -151,7 +176,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 53f9a04da51048d4daecc469106b4e72
+    spriteID: ea2f3161244647f4085fc527522868bb
     internalID: 0
     vertices: []
     indices: 
@@ -161,7 +186,8 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      walk_1_0: 8681008312180965034
+      ceiling_floor_0: -7432764896283110827
+      ceiling_floor_1: -187167441087738688
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

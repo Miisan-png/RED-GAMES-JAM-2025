@@ -3,26 +3,20 @@ using UnityEngine;
 [System.Serializable]
 public class ParallaxLayer
 {
-    public Transform layerTransform;
-    public float parallaxSpeed = 0.5f;
-    public bool infiniteScroll = true;
-    public float layerWidth = 20f;
-    public bool moveHorizontal = true;
-    public bool moveVertical = false;
-    public Vector2 customDirection = Vector2.right;
-    [HideInInspector]
-    public Vector3 startPosition;
-    [HideInInspector]
-    public Transform cloneTransform;
+    public Transform transform;
+    public Vector2 parallaxMultiplier;
+    public bool infiniteHorizontal;
+    public bool infiniteVertical;
+
+    [HideInInspector] public Vector3 startPosition;
+    [HideInInspector] public float spriteWidth;
+    [HideInInspector] public float spriteHeight;
 }
 
 public class Parallax_Node : MonoBehaviour
 {
     public Transform cameraTransform;
-    public ParallaxLayer[] parallaxLayers;
-    public float globalSpeedMultiplier = 1f;
-    public bool useCustomDirection = false;
-    public Vector2 globalDirection = Vector2.right;
+    public ParallaxLayer[] layers;
 
     private Vector3 lastCameraPosition;
 
@@ -32,96 +26,57 @@ public class Parallax_Node : MonoBehaviour
         {
             cameraTransform = Camera.main.transform;
         }
-
         lastCameraPosition = cameraTransform.position;
 
-        foreach (ParallaxLayer layer in parallaxLayers)
+        foreach (var layer in layers)
         {
-            if (layer.layerTransform != null)
+            layer.startPosition = layer.transform.position;
+            SpriteRenderer spriteRenderer = layer.transform.GetComponent<SpriteRenderer>();
+            if (spriteRenderer != null && spriteRenderer.sprite != null)
             {
-                layer.startPosition = layer.layerTransform.position;
+                layer.spriteWidth = spriteRenderer.sprite.bounds.size.x * layer.transform.localScale.x;
+                layer.spriteHeight = spriteRenderer.sprite.bounds.size.y * layer.transform.localScale.y;
+            }
+        }
+    }
 
-                if (layer.infiniteScroll && layer.cloneTransform == null)
+    void LateUpdate()
+    {
+        if (cameraTransform == null || layers == null) return;
+
+        Vector3 deltaMovement = cameraTransform.position - lastCameraPosition;
+        lastCameraPosition = cameraTransform.position;
+
+        foreach (var layer in layers)
+        {
+            if (layer.transform == null) continue;
+
+            Vector3 parallaxMovement = new Vector3(
+                deltaMovement.x * layer.parallaxMultiplier.x,
+                deltaMovement.y * layer.parallaxMultiplier.y,
+                0
+            );
+
+            layer.transform.position += parallaxMovement;
+
+            if (layer.infiniteHorizontal)
+            {
+                float temp = (cameraTransform.position.x * (1 - layer.parallaxMultiplier.x));
+                if (Mathf.Abs(cameraTransform.position.x - layer.transform.position.x) >= layer.spriteWidth)
                 {
-                    GameObject clone = Instantiate(layer.layerTransform.gameObject, layer.layerTransform.position + Vector3.right * layer.layerWidth, layer.layerTransform.rotation, layer.layerTransform.parent);
-                    layer.cloneTransform = clone.transform;
+                    float offsetPositionX = (cameraTransform.position.x - layer.transform.position.x) % layer.spriteWidth;
+                    layer.transform.position = new Vector3(cameraTransform.position.x - offsetPositionX, layer.transform.position.y, layer.transform.position.z);
+                }
+            }
+
+            if (layer.infiniteVertical)
+            {
+                 if (Mathf.Abs(cameraTransform.position.y - layer.transform.position.y) >= layer.spriteHeight)
+                {
+                    float offsetPositionY = (cameraTransform.position.y - layer.transform.position.y) % layer.spriteHeight;
+                    layer.transform.position = new Vector3(layer.transform.position.x, cameraTransform.position.y - offsetPositionY, layer.transform.position.z);
                 }
             }
         }
-    }
-
-    void Update()
-    {
-        if (cameraTransform == null) return;
-
-        Vector3 deltaMovement = cameraTransform.position - lastCameraPosition;
-
-        foreach (ParallaxLayer layer in parallaxLayers)
-        {
-            if (layer.layerTransform == null) continue;
-
-            UpdateParallaxLayer(layer, deltaMovement);
-        }
-
-        lastCameraPosition = cameraTransform.position;
-    }
-
-    void UpdateParallaxLayer(ParallaxLayer layer, Vector3 deltaMovement)
-    {
-        Vector3 parallaxMovement = Vector3.zero;
-
-        if (useCustomDirection)
-        {
-            parallaxMovement = globalDirection * deltaMovement.magnitude * layer.parallaxSpeed * globalSpeedMultiplier;
-        }
-        else
-        {
-            if (layer.moveHorizontal)
-            {
-                parallaxMovement.x = deltaMovement.x * layer.parallaxSpeed * globalSpeedMultiplier;
-            }
-
-            if (layer.moveVertical)
-            {
-                parallaxMovement.y = deltaMovement.y * layer.parallaxSpeed * globalSpeedMultiplier;
-            }
-        }
-
-        layer.layerTransform.position += parallaxMovement;
-
-        if (layer.cloneTransform != null)
-        {
-            layer.cloneTransform.position += parallaxMovement;
-        }
-
-        if (layer.infiniteScroll && layer.moveHorizontal)
-        {
-            HandleInfiniteScroll(layer);
-        }
-    }
-
-    void HandleInfiniteScroll(ParallaxLayer layer)
-    {
-        float camX = cameraTransform.position.x;
-        float leftEdge = layer.layerTransform.position.x - (layer.layerWidth * 0.5f);
-        float rightEdge = layer.cloneTransform.position.x - (layer.layerWidth * 0.5f);
-
-        if (camX > rightEdge)
-        {
-            layer.layerTransform.position += Vector3.right * layer.layerWidth * 2f;
-            SwapClones(layer);
-        }
-        else if (camX < leftEdge)
-        {
-            layer.cloneTransform.position -= Vector3.right * layer.layerWidth * 2f;
-            SwapClones(layer);
-        }
-    }
-
-    void SwapClones(ParallaxLayer layer)
-    {
-        Transform temp = layer.layerTransform;
-        layer.layerTransform = layer.cloneTransform;
-        layer.cloneTransform = temp;
     }
 }

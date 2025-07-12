@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 3d66f2720cfb5674d8f8d70fe7aa5803
+guid: 7143d035b4e67794cbe2dcbc4c5ff48a
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 8681008312180965034
-    second: walk_1_0
+      213: 9067986259281470624
+    second: KL stamp_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -126,23 +126,23 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: walk_1_0
+      name: KL stamp_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 207
-        width: 1070
-        height: 666
+        x: 156
+        y: 102
+        width: 708
+        height: 804
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: aae72c3e013297870800000000000000
-      internalID: 8681008312180965034
+      spriteID: 0a468946575f7dd70800000000000000
+      internalID: 9067986259281470624
       vertices: []
       indices: 
       edges: []
@@ -151,7 +151,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 53f9a04da51048d4daecc469106b4e72
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -161,7 +161,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      walk_1_0: 8681008312180965034
+      KL stamp_0: 9067986259281470624
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

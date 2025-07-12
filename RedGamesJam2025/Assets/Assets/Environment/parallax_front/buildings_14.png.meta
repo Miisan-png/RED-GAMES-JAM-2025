@@ -1,10 +1,16 @@
 fileFormatVersion: 2
-guid: 3d66f2720cfb5674d8f8d70fe7aa5803
+guid: 09a5e13bceb82e54f90ac1ee8d75c307
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 8681008312180965034
-    second: walk_1_0
+      213: 5749002364810849345
+    second: buildings_14_0
+  - first:
+      213: 397797196064264272
+    second: buildings_14_1
+  - first:
+      213: -3432671164514401779
+    second: buildings_14_2
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -126,23 +132,67 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: walk_1_0
+      name: buildings_14_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 207
-        width: 1070
-        height: 666
+        y: 0
+        width: 420
+        height: 416
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: aae72c3e013297870800000000000000
-      internalID: 8681008312180965034
+      spriteID: 14c6e67f03f88cf40800000000000000
+      internalID: 5749002364810849345
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: buildings_14_1
+      rect:
+        serializedVersion: 2
+        x: 494
+        y: 0
+        width: 317
+        height: 260
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0509e043172458500800000000000000
+      internalID: 397797196064264272
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: buildings_14_2
+      rect:
+        serializedVersion: 2
+        x: 812
+        y: 0
+        width: 1108
+        height: 364
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d02846053c3bc50d0800000000000000
+      internalID: -3432671164514401779
       vertices: []
       indices: 
       edges: []
@@ -151,7 +201,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 53f9a04da51048d4daecc469106b4e72
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -161,7 +211,9 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      walk_1_0: 8681008312180965034
+      buildings_14_0: 5749002364810849345
+      buildings_14_1: 397797196064264272
+      buildings_14_2: -3432671164514401779
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
