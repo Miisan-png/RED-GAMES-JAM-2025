@@ -85,7 +85,7 @@ public class Game_Manager : MonoBehaviour
     {
         if (ticketsUI != null)
         {
-            ticketsUI.text = currentCoins.ToString();
+            ticketsUI.text = $"{currentCoins}";
         }
     }
     

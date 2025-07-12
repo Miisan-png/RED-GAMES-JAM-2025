@@ -32,7 +32,7 @@ public class Progress_Bar : MonoBehaviour
     void Start()
     {
         InitializeProgressBar();
-        UpdateProgressBar(value, false); 
+        SetValue(value, false);
         previousValue = value;
     }
 
@@ -55,34 +55,15 @@ public class Progress_Bar : MonoBehaviour
         
         if (fillImage != null)
         {
-            fillImage.sizeDelta = new Vector2(maxWidth * value, fillImage.sizeDelta.y);
+            fillImage.sizeDelta = new Vector2(0, fillImage.sizeDelta.y);
         }
-    }
-
-    void Update()
-    {
-        // if (Mathf.Abs(value - previousValue) > 0.001f)
-        // {
-        //     UpdateProgressBar(value, true);
-        //     previousValue = value;
-        // }
     }
 
     public void SetValue(float newValue, bool animate = true)
     {
         float targetValue = Mathf.Clamp01(newValue);
-        
-        if (animate)
-        {
-            value = targetValue;
-            UpdateProgressBar(targetValue, true);
-        }
-        else
-        {
-            value = targetValue;
-            UpdateProgressBar(targetValue, false);
-        }
-        
+        value = targetValue;
+        UpdateProgressBar(targetValue, animate);
         previousValue = value;
     }
 
