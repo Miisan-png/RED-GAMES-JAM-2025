@@ -8,6 +8,11 @@ public class Player_Movement : MonoBehaviour
     public float gravity = 25f;
     public float maxVerticalSpeed = 15f;
     
+    [Header("Speed Increase Settings")]
+    public float speedIncreaseRate = 0.5f;
+    public float maxSpeed = 20f;
+    public float speedIncreaseInterval = 5f;
+    
     [Header("Jetpack Settings")]
     public float jetpackAcceleration = 20f;
     public float maxJetpackForce = 25f;
@@ -24,12 +29,15 @@ public class Player_Movement : MonoBehaviour
     private float currentJetpackForce = 0f;
     private float jetpackHoldTime = 0f;
     private Camera mainCamera;
+    private float currentSpeed;
+    private float speedIncreaseTimer = 0f;
     
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         rb.gravityScale = 0f;
         mainCamera = Camera.main;
+        currentSpeed = moveSpeed;
         
         if (useHeightBounds && mainCamera != null)
         {
@@ -45,6 +53,7 @@ public class Player_Movement : MonoBehaviour
         HandleMovement();
         HandleJetpack();
         HandleBounds();
+        HandleSpeedIncrease();
     }
     
     void HandleInput()
@@ -77,7 +86,7 @@ public class Player_Movement : MonoBehaviour
     {
         if (isMoving)
         {
-            rb.linearVelocity = new Vector2(moveSpeed, rb.linearVelocity.y);
+            rb.linearVelocity = new Vector2(currentSpeed, rb.linearVelocity.y);
         }
     }
     
@@ -113,5 +122,30 @@ public class Player_Movement : MonoBehaviour
                 rb.linearVelocity = new Vector2(rb.linearVelocity.x, 0);
             }
         }
+    }
+    
+    void HandleSpeedIncrease()
+    {
+        if (isMoving)
+        {
+            speedIncreaseTimer += Time.deltaTime;
+            
+            if (speedIncreaseTimer >= speedIncreaseInterval)
+            {
+                currentSpeed = Mathf.Min(currentSpeed + speedIncreaseRate, maxSpeed);
+                speedIncreaseTimer = 0f;
+            }
+        }
+    }
+    
+    public float GetCurrentSpeed()
+    {
+        return currentSpeed;
+    }
+    
+    public void ResetSpeed()
+    {
+        currentSpeed = moveSpeed;
+        speedIncreaseTimer = 0f;
     }
 }
