@@ -45,6 +45,7 @@ public class Coin_Spawner : MonoBehaviour
         }
     }
 
+
     Vector3 FindValidSpawnPosition()
     {
         float yPos = Random.Range(-1f, 2f);

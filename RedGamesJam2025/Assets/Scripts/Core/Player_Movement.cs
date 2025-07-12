@@ -32,12 +32,18 @@ public class Player_Movement : MonoBehaviour
     private float currentSpeed;
     private float speedIncreaseTimer = 0f;
     
+    // NEW: Health system integration
+    private Player_Health_Behavior playerHealth;
+    
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         rb.gravityScale = 0f;
         mainCamera = Camera.main;
         currentSpeed = moveSpeed;
+        
+        // NEW: Get health component
+        playerHealth = GetComponent<Player_Health_Behavior>();
         
         if (useHeightBounds && mainCamera != null)
         {
@@ -49,6 +55,12 @@ public class Player_Movement : MonoBehaviour
     
     void Update()
     {
+        // NEW: Only handle input and movement if alive
+        if (playerHealth != null && !playerHealth.IsAlive())
+        {
+            return; // Don't process movement if dead
+        }
+        
         HandleInput();
         HandleMovement();
         HandleJetpack();
@@ -147,5 +159,25 @@ public class Player_Movement : MonoBehaviour
     {
         currentSpeed = moveSpeed;
         speedIncreaseTimer = 0f;
+    }
+    
+    // NEW: Public methods for health system integration
+    public void StopMovement()
+    {
+        isMoving = false;
+        isJetpackActive = false;
+        currentJetpackForce = 0f;
+        jetpackHoldTime = 0f;
+    }
+    
+    public void ResetMovement()
+    {
+        ResetSpeed();
+        StopMovement();
+    }
+    
+    public bool IsMoving()
+    {
+        return isMoving;
     }
 }
