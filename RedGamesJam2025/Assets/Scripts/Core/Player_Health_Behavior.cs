@@ -1,4 +1,5 @@
 using UnityEngine;
+using DG.Tweening;
 
 public class Player_Health_Behavior : MonoBehaviour
 {
@@ -24,7 +25,12 @@ public class Player_Health_Behavior : MonoBehaviour
     public Color flashColor = Color.red;
     public float flashDuration = 0.1f;
     public int flashCount = 3;
-    
+
+    [Header("Camera")]
+    public Transform playerCamera;
+    public float cameraShakeIntensity = 0.5f;
+    public float cameraShakeDuration = 0.8f;
+        
     private Rigidbody2D rb;
     private Player_Movement playerMovement;
     private SpriteRenderer spriteRenderer;
@@ -141,33 +147,36 @@ public class Player_Health_Behavior : MonoBehaviour
             yield return new WaitForSeconds(flashDuration);
         }
     }
-    
+
     void Die()
+{
+    if (isDead) return;
+    
+    isDead = true;
+    
+    OnPlayerDeath?.Invoke();
+    
+    if (playerMovement != null)
     {
-        if (isDead) return;
-        
-        isDead = true;
-        
-        // Trigger death event
-        OnPlayerDeath?.Invoke();
-        
-        // Disable player movement
-        if (playerMovement != null)
-        {
-            playerMovement.enabled = false;
-        }
-        
-        // Enable ragdoll physics
-        if (enableRagdoll)
-        {
-            EnableRagdoll();
-        }
-        
-        // Play death effects
-        PlayHitEffects();
-        
-        Debug.Log("Player Died!");
+        playerMovement.enabled = false;
     }
+    
+    if (playerCamera != null)
+    {
+        playerCamera.DOShakePosition(cameraShakeDuration, cameraShakeIntensity, 10, 90f, false, true);
+    }
+    
+    // Enable ragdoll physics
+    if (enableRagdoll)
+    {
+        EnableRagdoll();
+    }
+    
+    // Play death effects
+    PlayHitEffects();
+    
+    Debug.Log("Player Died!");
+}
     
     void EnableRagdoll()
     {

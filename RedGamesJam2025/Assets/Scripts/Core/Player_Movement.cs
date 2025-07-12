@@ -5,6 +5,8 @@ public class Player_Movement : MonoBehaviour
     [Header("Movement Settings")]
     public float moveSpeed = 5f;
     public float jetpackForce = 15f;
+
+    private Player_Animation_System animator;
     public float gravity = 25f;
     public float maxVerticalSpeed = 15f;
     
@@ -41,6 +43,8 @@ public class Player_Movement : MonoBehaviour
         rb.gravityScale = 0f;
         mainCamera = Camera.main;
         currentSpeed = moveSpeed;
+        animator = GetComponent<Player_Animation_System>();
+
         
         // NEW: Get health component
         playerHealth = GetComponent<Player_Health_Behavior>();
@@ -60,6 +64,15 @@ public class Player_Movement : MonoBehaviour
         {
             return; // Don't process movement if dead
         }
+
+        if (isMoving)
+        {
+            if (rb.linearVelocity.y > 0.1f || rb.linearVelocity.y < -0.1f)
+                animator.Play("fly");
+            else
+                animator.Play("walk");
+        }
+
         
         HandleInput();
         HandleMovement();

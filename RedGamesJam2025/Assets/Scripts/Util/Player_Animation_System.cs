@@ -1,102 +1,66 @@
 using UnityEngine;
 using System.Collections.Generic;
 
-[System.Serializable]
-public class AnimationClip
-{
-    public string name;
-    public Sprite[] frames;
-    public float frameRate = 10f;
-    public bool loop = true;
-}
-
 public class Player_Animation_System : MonoBehaviour
 {
-    public AnimationClip[] animationClips;
-    
-    private SpriteRenderer spriteRenderer;
-    private int currentFrame;
-    private float timer;
-    private AnimationClip currentAnimation;
-    private Dictionary<string, AnimationClip> animationDict;
-    private bool isPlaying = true;
+    public SpriteRenderer spriteRenderer;
 
-    void Start()
-    {
-        spriteRenderer = GetComponent<SpriteRenderer>();
-        
-        animationDict = new Dictionary<string, AnimationClip>();
-        foreach (AnimationClip clip in animationClips)
-        {
-            animationDict[clip.name] = clip;
-        }
-        
-        if (animationClips.Length > 0)
-        {
-            currentAnimation = animationClips[0];
-        }
-    }
+    [System.Serializable]
+    public class AnimationClip
+    {
+        public string name;
+        public List<Sprite> frames;
+        public float frameRate = 10f;
+        public bool loop = true;
+    }
 
-    void Update()
-    {
-        if (currentAnimation == null || currentAnimation.frames.Length == 0 || !isPlaying) return;
+    public List<AnimationClip> animations;
 
-        timer += Time.deltaTime;
-        if (timer >= 1f / currentAnimation.frameRate)
-        {
-            currentFrame++;
-            
-            if (currentFrame >= currentAnimation.frames.Length)
-            {
-                if (currentAnimation.loop)
-                {
-                    currentFrame = 0;
-                }
-                else
-                {
-                    currentFrame = currentAnimation.frames.Length - 1;
-                    isPlaying = false;
-                }
-            }
-            
-            spriteRenderer.sprite = currentAnimation.frames[currentFrame];
-            timer = 0f;
-        }
-    }
+    private Dictionary<string, AnimationClip> animationDict;
+    private AnimationClip currentClip;
+    private int currentFrame;
+    private float timer;
 
-    public void PlayAnimation(string animationName)
-    {
-        if (animationDict.ContainsKey(animationName))
-        {
-            currentAnimation = animationDict[animationName];
-            currentFrame = 0;
-            timer = 0f;
-            isPlaying = true;
-            
-            if (currentAnimation.frames.Length > 0)
-            {
-                spriteRenderer.sprite = currentAnimation.frames[0];
-            }
-        }
-    }
+    void Awake()
+    {
+        animationDict = new Dictionary<string, AnimationClip>();
+        foreach (var clip in animations)
+        {
+            animationDict[clip.name] = clip;
+        }
+    }
 
-    public void StopAnimation()
-    {
-        isPlaying = false;
-    }
+    void Update()
+    {
+        if (currentClip == null || currentClip.frames.Count == 0) return;
 
-    public void ResumeAnimation()
-    {
-        isPlaying = true;
-    }
+        timer += Time.deltaTime;
+        if (timer >= 1f / currentClip.frameRate)
+        {
+            timer = 0f;
+            currentFrame++;
+            if (currentFrame >= currentClip.frames.Count)
+            {
+                if (currentClip.loop)
+                {
+                    currentFrame = 0;
+                }
+                else
+                {
+                    currentFrame = currentClip.frames.Count - 1;
+                }
+            }
+            spriteRenderer.sprite = currentClip.frames[currentFrame];
+        }
+    }
 
-    public bool IsAnimationPlaying()
-    {
-        return isPlaying;
-    }
-
-    public string GetCurrentAnimationName()
-    {
-        return currentAnimation != null ? currentAnimation.name : "";
-    }
+    public void Play(string animationName)
+    {
+        if (currentClip != null && currentClip.name == animationName) return;
+        if (!animationDict.ContainsKey(animationName)) return;
+        currentClip = animationDict[animationName];
+        currentFrame = 0;
+        timer = 0f;
+        spriteRenderer.sprite = currentClip.frames[0];
+    }
 }
