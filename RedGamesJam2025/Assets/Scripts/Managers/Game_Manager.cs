@@ -4,14 +4,17 @@ using TMPro;
 public class Game_Manager : MonoBehaviour
 {
     public static Game_Manager Instance;
-    
+
     [Header("Game Stats")]
+
     public int currentDistance = 0;
     public int currentCoins = 0;
     public int currentTickets = 0;
     public int highScore = 0;
     public int totalCoins = 0;
     public int totalTickets = 0;
+    public Landmark_Manager landmarkManager;
+
     
     [Header("UI References")]
     public TextMeshProUGUI ticketsUI;
@@ -59,11 +62,17 @@ public class Game_Manager : MonoBehaviour
         return player != null;
     }
     
+
     public void AddCoins(int amount)
     {
         currentCoins += amount;
         totalCoins += amount;
-    }
+
+        if (landmarkManager != null)
+        {
+            landmarkManager.OnCoinsUpdated(amount);
+        }
+}
     
     public void AddTickets(int amount)
     {
@@ -76,7 +85,7 @@ public class Game_Manager : MonoBehaviour
     {
         if (ticketsUI != null)
         {
-            ticketsUI.text = currentTickets.ToString();
+            ticketsUI.text = currentCoins.ToString();
         }
     }
     
