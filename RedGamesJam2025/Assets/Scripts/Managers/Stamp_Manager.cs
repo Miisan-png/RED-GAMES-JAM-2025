@@ -13,16 +13,10 @@ public class Stamp_Manager : MonoBehaviour
     public GameObject[] countryNodes;
 
     [Header("Animation Settings")]
-    public float waitAfterThreePassesDelay = 2f; // Wait time after collecting 3 passes
+    public float waitAfterThreePassesDelay = 2f;
     public float flashDuration = 0.5f;
-    public float stampSlideDuration = 0.8f;
-    public float stampPopDuration = 0.4f;
 
-    [Header("Positions")]
-    public float stampSlideDistance = 300f;
-
-    private Vector3[] stampOriginalPositions;
-    private Vector3[] stampStartPositions;
+    private StampAnimationController stampAnimationController;
     private int currentCountryIndex = 0;
     private bool hasTriggered = false;
     private int lastPassCount = 0;
@@ -34,37 +28,27 @@ public class Stamp_Manager : MonoBehaviour
 
     void SetupStampManager()
     {
+        // Get the animation controller
+        stampAnimationController = GetComponent<StampAnimationController>();
+        if (stampAnimationController == null)
+        {
+            Debug.LogError("StampAnimationController not found! Please add it to the same GameObject.");
+            return;
+        }
+
+        // Setup flash panel
         if (flashPanel != null)
         {
             flashPanel.alpha = 0f;
             flashPanel.gameObject.SetActive(false);
         }
 
-        if (stampImages != null && stampImages.Length > 0)
-        {
-            stampOriginalPositions = new Vector3[stampImages.Length];
-            stampStartPositions = new Vector3[stampImages.Length];
-
-            for (int i = 0; i < stampImages.Length; i++)
-            {
-                if (stampImages[i] != null)
-                {
-                    stampOriginalPositions[i] = stampImages[i].transform.position;
-                    stampStartPositions[i] = stampOriginalPositions[i] + Vector3.down * stampSlideDistance;
-                    stampImages[i].transform.position = stampStartPositions[i];
-                    stampImages[i].transform.localScale = Vector3.zero;
-                    stampImages[i].gameObject.SetActive(false);
-                }
-            }
-        }
-
-        // Enable default node initially
+        // Setup country nodes
         if (defaultNode != null)
         {
             defaultNode.SetActive(true);
         }
 
-        // Disable all country nodes initially
         if (countryNodes != null && countryNodes.Length > 0)
         {
             for (int i = 0; i < countryNodes.Length; i++)
@@ -75,6 +59,8 @@ public class Stamp_Manager : MonoBehaviour
                 }
             }
         }
+
+        Debug.Log("Stamp_Manager setup complete");
     }
 
     void Update()
@@ -90,7 +76,7 @@ public class Stamp_Manager : MonoBehaviour
                 hasTriggered = true;
             }
 
-            // Reset trigger when boarding passes reset (allowing collection again)
+            // Reset trigger when boarding passes reset
             if (passes < lastPassCount && passes == 0)
             {
                 hasTriggered = false;
@@ -102,6 +88,14 @@ public class Stamp_Manager : MonoBehaviour
 
     void TriggerStampSequence()
     {
+        if (stampAnimationController == null || !stampAnimationController.AreStampsInitialized())
+        {
+            Debug.LogError("Cannot trigger stamp sequence - animation controller not ready!");
+            return;
+        }
+
+        Debug.Log("Triggering stamp sequence...");
+
         Sequence stampSequence = DOTween.Sequence();
 
         // Wait after collecting 3 boarding passes
@@ -113,13 +107,20 @@ public class Stamp_Manager : MonoBehaviour
         // Wait for flash to complete
         stampSequence.AppendInterval(flashDuration);
 
-        // Show stamp and update country
-        stampSequence.AppendCallback(() => ShowStampAndUpdateCountry());
+        // Show stamp
+        stampSequence.AppendCallback(() => ShowCurrentStamp());
     }
 
     void TriggerScreenFlash()
     {
-        if (flashPanel == null) return;
+        if (flashPanel == null) 
+        {
+            Debug.Log("No flash panel - skipping flash and updating country nodes");
+            UpdateCountryNodes();
+            return;
+        }
+
+        Debug.Log("Triggering screen flash");
 
         flashPanel.gameObject.SetActive(true);
         flashPanel.alpha = 0f;
@@ -144,97 +145,57 @@ public class Stamp_Manager : MonoBehaviour
         });
     }
 
-    void ShowStampAndUpdateCountry()
+    void ShowCurrentStamp()
     {
-        if (stampImages == null || stampImages.Length == 0) return;
+        if (stampAnimationController == null)
+        {
+            Debug.LogError("No stamp animation controller!");
+            return;
+        }
 
-        // Get the stamp for the current country
-        int stampIndex = currentCountryIndex;
-        if (stampIndex >= stampImages.Length) return;
+        if (currentCountryIndex >= stampAnimationController.GetStampCount())
+        {
+            Debug.LogWarning($"Current country index {currentCountryIndex} exceeds stamp count {stampAnimationController.GetStampCount()}");
+            return;
+        }
 
-        RawImage currentStamp = stampImages[stampIndex];
-        if (currentStamp == null) return;
-
-        // Enable stamp
-        currentStamp.gameObject.SetActive(true);
-        currentStamp.transform.position = stampStartPositions[stampIndex];
-        currentStamp.transform.localScale = Vector3.zero;
-
-        Sequence stampAnimation = DOTween.Sequence();
-
-        // Slide up from bottom
-        stampAnimation.Append(currentStamp.transform.DOMove(stampOriginalPositions[stampIndex], stampSlideDuration)
-            .SetEase(Ease.OutBack));
-
-        // Scale up simultaneously
-        stampAnimation.Join(currentStamp.transform.DOScale(1f, stampSlideDuration)
-            .SetEase(Ease.OutBack));
-
-        // Pop effect
-        stampAnimation.AppendInterval(0.1f);
-        stampAnimation.Append(currentStamp.transform.DOPunchScale(Vector3.one * 0.2f, stampPopDuration, 6, 0.3f)
-            .SetEase(Ease.OutElastic));
-
-        // Shake effect
-        stampAnimation.Join(currentStamp.transform.DOShakeRotation(stampPopDuration, 10f, 15, 90f)
-            .SetEase(Ease.OutQuad));
-
-        // Hide stamp after delay
-        stampAnimation.AppendInterval(2f);
-        stampAnimation.AppendCallback(() => HideStamp(stampIndex));
+        Debug.Log($"Showing stamp for country index: {currentCountryIndex}");
+        stampAnimationController.ShowStamp(currentCountryIndex);
     }
 
     void UpdateCountryNodes()
     {
-        if (countryNodes == null || countryNodes.Length == 0) return;
+        if (countryNodes == null || countryNodes.Length == 0) 
+        {
+            Debug.Log("No country nodes to update");
+            return;
+        }
+
+        Debug.Log($"Updating country nodes - current index: {currentCountryIndex}");
 
         // Disable default node when first country is unlocked
         if (currentCountryIndex == 0 && defaultNode != null)
         {
             defaultNode.SetActive(false);
+            Debug.Log("Disabled default node");
         }
 
         // Disable previous country node (if not the first unlock)
         if (currentCountryIndex > 0 && currentCountryIndex <= countryNodes.Length && countryNodes[currentCountryIndex - 1] != null)
         {
             countryNodes[currentCountryIndex - 1].SetActive(false);
+            Debug.Log($"Disabled country node {currentCountryIndex - 1}");
         }
 
         // Enable new country node
         if (currentCountryIndex < countryNodes.Length && countryNodes[currentCountryIndex] != null)
         {
             countryNodes[currentCountryIndex].SetActive(true);
+            Debug.Log($"Enabled country node {currentCountryIndex}");
         }
 
         // Move to next country index
         currentCountryIndex++;
-    }
-
-    void HideStamp(int stampIndex)
-    {
-        if (stampImages == null || stampIndex >= stampImages.Length) return;
-
-        RawImage currentStamp = stampImages[stampIndex];
-        if (currentStamp == null) return;
-
-        currentStamp.transform.DOKill();
-
-        Sequence hideSequence = DOTween.Sequence();
-
-        // Scale down
-        hideSequence.Append(currentStamp.transform.DOScale(0f, 0.5f)
-            .SetEase(Ease.InBack));
-
-        // Move down
-        hideSequence.Join(currentStamp.transform.DOMove(stampStartPositions[stampIndex], 0.5f)
-            .SetEase(Ease.InBack));
-
-        // Disable when done
-        hideSequence.OnComplete(() =>
-        {
-            currentStamp.gameObject.SetActive(false);
-            currentStamp.transform.rotation = Quaternion.identity;
-        });
     }
 
     // Public methods for manual control
@@ -247,27 +208,27 @@ public class Stamp_Manager : MonoBehaviour
         }
     }
 
+    [ContextMenu("Manual Trigger Stamp")]
+    public void TestManualTrigger()
+    {
+        ManualTriggerStamp();
+    }
+
     public void ResetStampManager()
     {
+        Debug.Log("Resetting Stamp Manager");
+        
         hasTriggered = false;
         currentCountryIndex = 0;
         lastPassCount = 0;
 
-        if (stampImages != null)
+        // Reset animation controller
+        if (stampAnimationController != null)
         {
-            for (int i = 0; i < stampImages.Length; i++)
-            {
-                if (stampImages[i] != null)
-                {
-                    stampImages[i].transform.DOKill();
-                    stampImages[i].gameObject.SetActive(false);
-                    stampImages[i].transform.position = stampStartPositions[i];
-                    stampImages[i].transform.localScale = Vector3.zero;
-                    stampImages[i].transform.rotation = Quaternion.identity;
-                }
-            }
+            stampAnimationController.HideAllStamps();
         }
 
+        // Reset flash panel
         if (flashPanel != null)
         {
             flashPanel.DOKill();
@@ -275,6 +236,7 @@ public class Stamp_Manager : MonoBehaviour
             flashPanel.alpha = 0f;
         }
 
+        // Reset country nodes
         if (defaultNode != null)
         {
             defaultNode.SetActive(true);
@@ -290,5 +252,11 @@ public class Stamp_Manager : MonoBehaviour
                 }
             }
         }
+    }
+
+    [ContextMenu("Reset Stamp Manager")]
+    public void TestReset()
+    {
+        ResetStampManager();
     }
 }
