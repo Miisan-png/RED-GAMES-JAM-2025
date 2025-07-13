@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Drone
   - ground
+  - prop
   layers:
   - Default
   - TransparentFX

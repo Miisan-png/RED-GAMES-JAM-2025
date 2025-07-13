@@ -1,0 +1,585 @@
+fileFormatVersion: 2
+guid: 86e62c1f574a11c4bb7d73ee4aefcb57
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 7941278648450690755
+    second: tap_anywhere_to_play_0
+  - first:
+      213: 7267910922846966291
+    second: tap_anywhere_to_play_1
+  - first:
+      213: 2011228621629579563
+    second: tap_anywhere_to_play_2
+  - first:
+      213: -3483844999909129102
+    second: tap_anywhere_to_play_3
+  - first:
+      213: 7618628557981773108
+    second: tap_anywhere_to_play_4
+  - first:
+      213: -6516892359157732519
+    second: tap_anywhere_to_play_5
+  - first:
+      213: -2738602591640884538
+    second: tap_anywhere_to_play_6
+  - first:
+      213: -2799672026987521187
+    second: tap_anywhere_to_play_7
+  - first:
+      213: -1175841893284074466
+    second: tap_anywhere_to_play_8
+  - first:
+      213: -1212296683841088865
+    second: tap_anywhere_to_play_9
+  - first:
+      213: 6225229366440864303
+    second: tap_anywhere_to_play_10
+  - first:
+      213: -1200000009779133113
+    second: tap_anywhere_to_play_11
+  - first:
+      213: 6144736645716690804
+    second: tap_anywhere_to_play_12
+  - first:
+      213: 4987613514932847291
+    second: tap_anywhere_to_play_13
+  - first:
+      213: -5984490189221051262
+    second: tap_anywhere_to_play_14
+  - first:
+      213: 3702750494906432400
+    second: tap_anywhere_to_play_15
+  - first:
+      213: 1245796550511679461
+    second: tap_anywhere_to_play_16
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: tap_anywhere_to_play_0
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 376
+        width: 40
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3ce2c472bd6153e60800000000000000
+      internalID: 7941278648450690755
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tap_anywhere_to_play_1
+      rect:
+        serializedVersion: 2
+        x: 126
+        y: 373
+        width: 39
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 312997f2a7eccd460800000000000000
+      internalID: 7267910922846966291
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tap_anywhere_to_play_2
+      rect:
+        serializedVersion: 2
+        x: 155
+        y: 373
+        width: 39
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b21645286c159eb10800000000000000
+      internalID: 2011228621629579563
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tap_anywhere_to_play_3
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 368
+        width: 39
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 27445e74e65e6afc0800000000000000
+      internalID: -3483844999909129102
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tap_anywhere_to_play_4
+      rect:
+        serializedVersion: 2
+        x: 236
+        y: 368
+        width: 39
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 43d662aee4ecab960800000000000000
+      internalID: 7618628557981773108
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tap_anywhere_to_play_5
+      rect:
+        serializedVersion: 2
+        x: 269
+        y: 372
+        width: 30
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 95b22f46de85f85a0800000000000000
+      internalID: -6516892359157732519
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tap_anywhere_to_play_6
+      rect:
+        serializedVersion: 2
+        x: 302
+        y: 372
+        width: 46
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6cae740e3778ef9d0800000000000000
+      internalID: -2738602591640884538
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tap_anywhere_to_play_7
+      rect:
+        serializedVersion: 2
+        x: 348
+        y: 368
+        width: 67
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d5b9fcfef119529d0800000000000000
+      internalID: -2799672026987521187
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tap_anywhere_to_play_8
+      rect:
+        serializedVersion: 2
+        x: 401
+        y: 369
+        width: 71
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e1ca7c627029eafe0800000000000000
+      internalID: -1175841893284074466
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tap_anywhere_to_play_9
+      rect:
+        serializedVersion: 2
+        x: 494
+        y: 375
+        width: 34
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f92944dc69e0d2fe0800000000000000
+      internalID: -1212296683841088865
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tap_anywhere_to_play_10
+      rect:
+        serializedVersion: 2
+        x: 529
+        y: 375
+        width: 27
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f2aa9084025746650800000000000000
+      internalID: 6225229366440864303
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tap_anywhere_to_play_11
+      rect:
+        serializedVersion: 2
+        x: 571
+        y: 376
+        width: 35
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 74546a6595eb85fe0800000000000000
+      internalID: -1200000009779133113
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tap_anywhere_to_play_12
+      rect:
+        serializedVersion: 2
+        x: 606
+        y: 373
+        width: 34
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 477c44e4c6d764550800000000000000
+      internalID: 6144736645716690804
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tap_anywhere_to_play_13
+      rect:
+        serializedVersion: 2
+        x: 629
+        y: 371
+        width: 38
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bb2828af010973540800000000000000
+      internalID: 4987613514932847291
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tap_anywhere_to_play_14
+      rect:
+        serializedVersion: 2
+        x: 656
+        y: 370
+        width: 27
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2844bad41e1d2fca0800000000000000
+      internalID: -5984490189221051262
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tap_anywhere_to_play_15
+      rect:
+        serializedVersion: 2
+        x: 696
+        y: 390
+        width: 8
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 09bbcc405ffc26330800000000000000
+      internalID: 3702750494906432400
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tap_anywhere_to_play_16
+      rect:
+        serializedVersion: 2
+        x: 698
+        y: 375
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5e7d7a7bc55f94110800000000000000
+      internalID: 1245796550511679461
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      tap_anywhere_to_play_0: 7941278648450690755
+      tap_anywhere_to_play_1: 7267910922846966291
+      tap_anywhere_to_play_10: 6225229366440864303
+      tap_anywhere_to_play_11: -1200000009779133113
+      tap_anywhere_to_play_12: 6144736645716690804
+      tap_anywhere_to_play_13: 4987613514932847291
+      tap_anywhere_to_play_14: -5984490189221051262
+      tap_anywhere_to_play_15: 3702750494906432400
+      tap_anywhere_to_play_16: 1245796550511679461
+      tap_anywhere_to_play_2: 2011228621629579563
+      tap_anywhere_to_play_3: -3483844999909129102
+      tap_anywhere_to_play_4: 7618628557981773108
+      tap_anywhere_to_play_5: -6516892359157732519
+      tap_anywhere_to_play_6: -2738602591640884538
+      tap_anywhere_to_play_7: -2799672026987521187
+      tap_anywhere_to_play_8: -1175841893284074466
+      tap_anywhere_to_play_9: -1212296683841088865
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

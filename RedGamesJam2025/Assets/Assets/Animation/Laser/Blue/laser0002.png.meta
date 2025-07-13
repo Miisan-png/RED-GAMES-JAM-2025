@@ -1,0 +1,3731 @@
+fileFormatVersion: 2
+guid: cd8d7c2a85043fc4da3e04575c251ca3
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -5824615357312188755
+    second: laser0002_0
+  - first:
+      213: -8728884570443005570
+    second: laser0002_1
+  - first:
+      213: -3768053657232685507
+    second: laser0002_2
+  - first:
+      213: -6510772737711158560
+    second: laser0002_3
+  - first:
+      213: 6117557110293938322
+    second: laser0002_4
+  - first:
+      213: 7918988153505510878
+    second: laser0002_5
+  - first:
+      213: 2141811577589360830
+    second: laser0002_6
+  - first:
+      213: -2894144426636288486
+    second: laser0002_7
+  - first:
+      213: -390998629319598293
+    second: laser0002_8
+  - first:
+      213: 420119725375816678
+    second: laser0002_9
+  - first:
+      213: 493995349770527948
+    second: laser0002_10
+  - first:
+      213: -6687728929177305813
+    second: laser0002_11
+  - first:
+      213: -4457690578729430306
+    second: laser0002_12
+  - first:
+      213: 4863931997075719798
+    second: laser0002_13
+  - first:
+      213: -1482652577095484166
+    second: laser0002_14
+  - first:
+      213: -7684493059969123878
+    second: laser0002_15
+  - first:
+      213: -3935369075715231169
+    second: laser0002_16
+  - first:
+      213: 4636728730183779346
+    second: laser0002_17
+  - first:
+      213: -2006281233200091696
+    second: laser0002_18
+  - first:
+      213: -343810198678035819
+    second: laser0002_19
+  - first:
+      213: -7416148167878094291
+    second: laser0002_20
+  - first:
+      213: -8934568190404929975
+    second: laser0002_21
+  - first:
+      213: 5368016908111570699
+    second: laser0002_22
+  - first:
+      213: 8785231362772454983
+    second: laser0002_23
+  - first:
+      213: 7952041646204837757
+    second: laser0002_24
+  - first:
+      213: 7402031726754953411
+    second: laser0002_25
+  - first:
+      213: 1460757198049296898
+    second: laser0002_26
+  - first:
+      213: -5073957883537336786
+    second: laser0002_27
+  - first:
+      213: 1764808110714937565
+    second: laser0002_28
+  - first:
+      213: 447591092855022871
+    second: laser0002_29
+  - first:
+      213: 3617316943884039691
+    second: laser0002_30
+  - first:
+      213: 7296518741692853989
+    second: laser0002_31
+  - first:
+      213: -2627373588800279947
+    second: laser0002_32
+  - first:
+      213: -5553764387517296646
+    second: laser0002_33
+  - first:
+      213: 7945954924583527370
+    second: laser0002_34
+  - first:
+      213: 8408115683921503850
+    second: laser0002_35
+  - first:
+      213: -231553998478637249
+    second: laser0002_36
+  - first:
+      213: 7354411332031790112
+    second: laser0002_37
+  - first:
+      213: 2039578796980142346
+    second: laser0002_38
+  - first:
+      213: -6107786972449058675
+    second: laser0002_39
+  - first:
+      213: 920450521213565001
+    second: laser0002_40
+  - first:
+      213: 3606609337162685213
+    second: laser0002_41
+  - first:
+      213: 4317737890017727338
+    second: laser0002_42
+  - first:
+      213: -5995476966873386959
+    second: laser0002_43
+  - first:
+      213: 388285298318475226
+    second: laser0002_44
+  - first:
+      213: 1831124313455167542
+    second: laser0002_45
+  - first:
+      213: 3581486889600531705
+    second: laser0002_46
+  - first:
+      213: -4054371884495362296
+    second: laser0002_47
+  - first:
+      213: 8725195710932442905
+    second: laser0002_48
+  - first:
+      213: 1737188278259707674
+    second: laser0002_49
+  - first:
+      213: 3896698509307065439
+    second: laser0002_50
+  - first:
+      213: 2606474269377254306
+    second: laser0002_51
+  - first:
+      213: -5114147367279516694
+    second: laser0002_52
+  - first:
+      213: 3149754648247612817
+    second: laser0002_53
+  - first:
+      213: -4014959768905871019
+    second: laser0002_54
+  - first:
+      213: 3326821352697499660
+    second: laser0002_55
+  - first:
+      213: 8125847170548505168
+    second: laser0002_56
+  - first:
+      213: -6836508469117102516
+    second: laser0002_57
+  - first:
+      213: -6890701662026971449
+    second: laser0002_58
+  - first:
+      213: -8781507110299290571
+    second: laser0002_59
+  - first:
+      213: 3305743319024168532
+    second: laser0002_60
+  - first:
+      213: -5153250387179200495
+    second: laser0002_61
+  - first:
+      213: 187031492214585251
+    second: laser0002_62
+  - first:
+      213: 9067958834837733984
+    second: laser0002_63
+  - first:
+      213: 2420724394707554147
+    second: laser0002_64
+  - first:
+      213: -7403833316955372510
+    second: laser0002_65
+  - first:
+      213: -5845956752033241623
+    second: laser0002_66
+  - first:
+      213: -5197131479130179378
+    second: laser0002_67
+  - first:
+      213: 3143278471756445798
+    second: laser0002_68
+  - first:
+      213: 757251583087205690
+    second: laser0002_69
+  - first:
+      213: 7662969816459235138
+    second: laser0002_70
+  - first:
+      213: 7630385793392792641
+    second: laser0002_71
+  - first:
+      213: -1011745607168526676
+    second: laser0002_72
+  - first:
+      213: -2768670269862637490
+    second: laser0002_73
+  - first:
+      213: 512077491102889031
+    second: laser0002_74
+  - first:
+      213: 1648989105407911601
+    second: laser0002_75
+  - first:
+      213: 9125733854187920101
+    second: laser0002_76
+  - first:
+      213: 7202447875267057930
+    second: laser0002_77
+  - first:
+      213: 3980318501311155912
+    second: laser0002_78
+  - first:
+      213: -4782447375475703673
+    second: laser0002_79
+  - first:
+      213: 7646514186554971797
+    second: laser0002_80
+  - first:
+      213: 6182515700030539836
+    second: laser0002_81
+  - first:
+      213: 6962473066890015636
+    second: laser0002_82
+  - first:
+      213: -4989243601174405365
+    second: laser0002_83
+  - first:
+      213: -3527463946667363922
+    second: laser0002_84
+  - first:
+      213: -4670648723936129781
+    second: laser0002_85
+  - first:
+      213: -5577773158290534029
+    second: laser0002_86
+  - first:
+      213: -34651008976795195
+    second: laser0002_87
+  - first:
+      213: -1533118737192458030
+    second: laser0002_88
+  - first:
+      213: 8092808084586689862
+    second: laser0002_89
+  - first:
+      213: -4039223274453985512
+    second: laser0002_90
+  - first:
+      213: 7560723893641025441
+    second: laser0002_91
+  - first:
+      213: 2106103618441018611
+    second: laser0002_92
+  - first:
+      213: 6616212514169350136
+    second: laser0002_93
+  - first:
+      213: -7073989478862305469
+    second: laser0002_94
+  - first:
+      213: 9174977715819289659
+    second: laser0002_95
+  - first:
+      213: -5735812941407135505
+    second: laser0002_96
+  - first:
+      213: -6522919122110838362
+    second: laser0002_97
+  - first:
+      213: -7572148479720711194
+    second: laser0002_98
+  - first:
+      213: 1721594549678648804
+    second: laser0002_99
+  - first:
+      213: -8692216924336887822
+    second: laser0002_100
+  - first:
+      213: -6084623663703199142
+    second: laser0002_101
+  - first:
+      213: -4508008050239392410
+    second: laser0002_102
+  - first:
+      213: -8420844921784761397
+    second: laser0002_103
+  - first:
+      213: -4505608046812440677
+    second: laser0002_104
+  - first:
+      213: -703941158781451040
+    second: laser0002_105
+  - first:
+      213: -8344477621939609606
+    second: laser0002_106
+  - first:
+      213: 3962608382326983529
+    second: laser0002_107
+  - first:
+      213: -8257435999311661409
+    second: laser0002_108
+  - first:
+      213: 6359094137387355438
+    second: laser0002_109
+  - first:
+      213: 330763861072317746
+    second: laser0002_110
+  - first:
+      213: 3990719565384389660
+    second: laser0002_111
+  - first:
+      213: 6299560526955761255
+    second: laser0002_112
+  - first:
+      213: -8032272249996639192
+    second: laser0002_113
+  - first:
+      213: 7830994853718493427
+    second: laser0002_114
+  - first:
+      213: 2346359968075060928
+    second: laser0002_115
+  - first:
+      213: -3333675705200930896
+    second: laser0002_116
+  - first:
+      213: -7433975358797521369
+    second: laser0002_117
+  - first:
+      213: 5484511969883961100
+    second: laser0002_118
+  - first:
+      213: 4093434310673926295
+    second: laser0002_119
+  - first:
+      213: 6106444141670679732
+    second: laser0002_120
+  - first:
+      213: -8081137147386002357
+    second: laser0002_121
+  - first:
+      213: 2699902530039287385
+    second: laser0002_122
+  - first:
+      213: 4568924986240240442
+    second: laser0002_123
+  - first:
+      213: -1152508690320694169
+    second: laser0002_124
+  - first:
+      213: -8901328182211110307
+    second: laser0002_125
+  - first:
+      213: -1839415673679704308
+    second: laser0002_126
+  - first:
+      213: 2877749750153452082
+    second: laser0002_127
+  - first:
+      213: 6680051270273000980
+    second: laser0002_128
+  - first:
+      213: -1469420275225729978
+    second: laser0002_129
+  - first:
+      213: -1532145783413021599
+    second: laser0002_130
+  - first:
+      213: -4658610575087725361
+    second: laser0002_131
+  - first:
+      213: 5469707401947998344
+    second: laser0002_132
+  - first:
+      213: 3040701588459465170
+    second: laser0002_133
+  - first:
+      213: 2600126373413428970
+    second: laser0002_134
+  - first:
+      213: 3695551539960497336
+    second: laser0002_135
+  - first:
+      213: -2269812499501681974
+    second: laser0002_136
+  - first:
+      213: -1768730337620821063
+    second: laser0002_137
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: laser0002_0
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 100
+        width: 19
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dae3f12513fca2fa0800000000000000
+      internalID: -5824615357312188755
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: laser0002_1
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 99
+        width: 20
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e714b551bb5ccd680800000000000000
+      internalID: -8728884570443005570
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: laser0002_2
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 103
+        width: 19
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d36c80aa92f25bbc0800000000000000
+      internalID: -3768053657232685507
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: laser0002_3
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 99
+        width: 22
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0eacd6bc0b615a5a0800000000000000
+      internalID: -6510772737711158560
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: laser0002_4
+      rect:
+        serializedVersion: 2
+        x: 182
+        y: 110
+        width: 12
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2904c3497cde5e450800000000000000
+      internalID: 6117557110293938322
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: laser0002_5
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 102
+        width: 22
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ed5f83ed4c5e5ed60800000000000000
+      internalID: 7918988153505510878
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: laser0002_6
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 104
+        width: 14
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eb86802384e39bd10800000000000000
+      internalID: 2141811577589360830
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: laser0002_7
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 110
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a1edaa15afee5d7d0800000000000000
+      internalID: -2894144426636288486
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: laser0002_8
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 98
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b2f9db771d4e29af0800000000000000
+      internalID: -390998629319598293
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: laser0002_9
+      rect:
+        serializedVersion: 2
+        x: 242
+        y: 106
+        width: 23
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6e309221aa094d500800000000000000
+      internalID: 420119725375816678
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: laser0002_10
+      rect:
+        serializedVersion: 2
+        x: 263
+        y: 99
+        width: 28
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cc464cf37260bd600800000000000000
+      internalID: 493995349770527948
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: laser0002_11
+      rect:
+        serializedVersion: 2
+        x: 291
+        y: 102
+        width: 19
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b2d7846d8f96033a0800000000000000
+      internalID: -6687728929177305813
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: laser0002_12
+      rect:
+        serializedVersion: 2
+        x: 308
+        y: 101
+        width: 23
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ed21a38590a1322c0800000000000000
+      internalID: -4457690578729430306
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: laser0002_13
+      rect:
+        serializedVersion: 2
+        x: 332
+        y: 100
+        width: 16
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 676ca519168208340800000000000000
+      internalID: 4863931997075719798
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: laser0002_14
+      rect:
+        serializedVersion: 2
+        x: 346
+        y: 109
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: afcf7e8265f8c6be0800000000000000
+      internalID: -1482652577095484166
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: laser0002_15
+      rect:
+        serializedVersion: 2
+        x: 350
+        y: 99
+        width: 18
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ad9f591b6423b5590800000000000000
+      internalID: -7684493059969123878
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: laser0002_16
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 112
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f32bfe51da2c269c0800000000000000
+      internalID: -3935369075715231169
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: laser0002_17
+      rect:
+        serializedVersion: 2
+        x: 368
+        y: 107
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 214c372b638f85040800000000000000
+      internalID: 4636728730183779346
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: laser0002_18
+      rect:
+        serializedVersion: 2
+        x: 386
+        y: 111
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0dd639f19d14824e0800000000000000
+      internalID: -2006281233200091696
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: laser0002_19
+      rect:
+        serializedVersion: 2
+        x: 389
+        y: 104
+        width: 20
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 592a3a5227a8a3bf0800000000000000
+      internalID: -343810198678035819
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: laser0002_20
+      rect:
+        serializedVersion: 2
+        x: 429
+        y: 105
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d2256f3a88c841990800000000000000
+      internalID: -7416148167878094291
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: laser0002_21
+      rect:
+        serializedVersion: 2
+        x: 433
+        y: 99
+        width: 14
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 946d8657199020480800000000000000
+      internalID: -8934568190404929975
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: laser0002_22
+      rect:
+        serializedVersion: 2
+        x: 446
+        y: 100
+        width: 14
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b07e74cdfe60f7a40800000000000000
+      internalID: 5368016908111570699
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: laser0002_23
+      rect:
+        serializedVersion: 2
+        x: 459
+        y: 104
+        width: 18
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 74e4ca7d0696be970800000000000000
+      internalID: 8785231362772454983
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: laser0002_24
+      rect:
+        serializedVersion: 2
+        x: 479
+        y: 103
+        width: 26
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d7fd629deb35b5e60800000000000000
+      internalID: 7952041646204837757
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: laser0002_25
+      rect:
+        serializedVersion: 2
+        x: 489
+        y: 112
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3c8766943ac49b660800000000000000
+      internalID: 7402031726754953411
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: laser0002_26
+      rect:
+        serializedVersion: 2
+        x: 505
+        y: 97
+        width: 14
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 202c2d4aee6a54410800000000000000
+      internalID: 1460757198049296898
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: laser0002_27
+      rect:
+        serializedVersion: 2
+        x: 517
+        y: 98
+        width: 115
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e26d67a103ea599b0800000000000000
+      internalID: -5073957883537336786
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: laser0002_28
+      rect:
+        serializedVersion: 2
+        x: 520
+        y: 113
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dd064e750abdd7810800000000000000
+      internalID: 1764808110714937565
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: laser0002_29
+      rect:
+        serializedVersion: 2
+        x: 567
+        y: 111
+        width: 11
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 715a04e3ab9263600800000000000000
+      internalID: 447591092855022871
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: laser0002_30
+      rect:
+        serializedVersion: 2
+        x: 632
+        y: 102
+        width: 34
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b06b538589a433230800000000000000
+      internalID: 3617316943884039691
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: laser0002_31
+      rect:
+        serializedVersion: 2
+        x: 666
+        y: 101
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5ee259f0321724560800000000000000
+      internalID: 7296518741692853989
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: laser0002_32
+      rect:
+        serializedVersion: 2
+        x: 683
+        y: 110
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 57ae05334a1b98bd0800000000000000
+      internalID: -2627373588800279947
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: laser0002_33
+      rect:
+        serializedVersion: 2
+        x: 698
+        y: 104
+        width: 20
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aff01d3f6b01de2b0800000000000000
+      internalID: -5553764387517296646
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: laser0002_34
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 104
+        width: 17
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ac3211987e3b54e60800000000000000
+      internalID: 7945954924583527370
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: laser0002_35
+      rect:
+        serializedVersion: 2
+        x: 736
+        y: 104
+        width: 15
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a66288a9aa0afa470800000000000000
+      internalID: 8408115683921503850
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: laser0002_36
+      rect:
+        serializedVersion: 2
+        x: 750
+        y: 98
+        width: 26
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f370c5e7dda59ccf0800000000000000
+      internalID: -231553998478637249
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: laser0002_37
+      rect:
+        serializedVersion: 2
+        x: 782
+        y: 106
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 02cbcd1242e101660800000000000000
+      internalID: 7354411332031790112
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: laser0002_38
+      rect:
+        serializedVersion: 2
+        x: 783
+        y: 98
+        width: 24
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a018b651c1a0e4c10800000000000000
+      internalID: 2039578796980142346
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: laser0002_39
+      rect:
+        serializedVersion: 2
+        x: 806
+        y: 106
+        width: 9
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d805a67eb18cc3ba0800000000000000
+      internalID: -6107786972449058675
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: laser0002_40
+      rect:
+        serializedVersion: 2
+        x: 814
+        y: 100
+        width: 15
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 948f14e4fd816cc00800000000000000
+      internalID: 920450521213565001
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: laser0002_41
+      rect:
+        serializedVersion: 2
+        x: 827
+        y: 111
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d1b503165104d0230800000000000000
+      internalID: 3606609337162685213
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: laser0002_42
+      rect:
+        serializedVersion: 2
+        x: 835
+        y: 104
+        width: 35
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a6350cf0cbfabeb30800000000000000
+      internalID: 4317737890017727338
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: laser0002_43
+      rect:
+        serializedVersion: 2
+        x: 871
+        y: 102
+        width: 19
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 130b97ac679cbcca0800000000000000
+      internalID: -5995476966873386959
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: laser0002_44
+      rect:
+        serializedVersion: 2
+        x: 889
+        y: 98
+        width: 26
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: adf77cdeb67736500800000000000000
+      internalID: 388285298318475226
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: laser0002_45
+      rect:
+        serializedVersion: 2
+        x: 911
+        y: 97
+        width: 14
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 63883138cd5796910800000000000000
+      internalID: 1831124313455167542
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: laser0002_46
+      rect:
+        serializedVersion: 2
+        x: 923
+        y: 102
+        width: 29
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9fcbb5eb95ff3b130800000000000000
+      internalID: 3581486889600531705
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: laser0002_47
+      rect:
+        serializedVersion: 2
+        x: 949
+        y: 99
+        width: 31
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 807a255804afbb7c0800000000000000
+      internalID: -4054371884495362296
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: laser0002_48
+      rect:
+        serializedVersion: 2
+        x: 975
+        y: 98
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 91fd3e1654f161970800000000000000
+      internalID: 8725195710932442905
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: laser0002_49
+      rect:
+        serializedVersion: 2
+        x: 994
+        y: 100
+        width: 38
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a1f64a9f88bbb1810800000000000000
+      internalID: 1737188278259707674
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: laser0002_50
+      rect:
+        serializedVersion: 2
+        x: 1005
+        y: 112
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f54ba0c06aad31630800000000000000
+      internalID: 3896698509307065439
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: laser0002_51
+      rect:
+        serializedVersion: 2
+        x: 1032
+        y: 106
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2a35d6ec98e0c2420800000000000000
+      internalID: 2606474269377254306
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: laser0002_52
+      rect:
+        serializedVersion: 2
+        x: 1044
+        y: 97
+        width: 27
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ae32e4cb016e609b0800000000000000
+      internalID: -5114147367279516694
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: laser0002_53
+      rect:
+        serializedVersion: 2
+        x: 1071
+        y: 99
+        width: 24
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1953f6a1a2d26bb20800000000000000
+      internalID: 3149754648247612817
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: laser0002_54
+      rect:
+        serializedVersion: 2
+        x: 1094
+        y: 105
+        width: 11
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 55191e2cc5ff748c0800000000000000
+      internalID: -4014959768905871019
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: laser0002_55
+      rect:
+        serializedVersion: 2
+        x: 1102
+        y: 99
+        width: 26
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c0018bed46e3b2e20800000000000000
+      internalID: 3326821352697499660
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: laser0002_56
+      rect:
+        serializedVersion: 2
+        x: 1117
+        y: 107
+        width: 18
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 05a18a3f2fec4c070800000000000000
+      internalID: 8125847170548505168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: laser0002_57
+      rect:
+        serializedVersion: 2
+        x: 1134
+        y: 98
+        width: 21
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c46535ac4c7df11a0800000000000000
+      internalID: -6836508469117102516
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: laser0002_58
+      rect:
+        serializedVersion: 2
+        x: 1150
+        y: 98
+        width: 28
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7c640bdc85f4f50a0800000000000000
+      internalID: -6890701662026971449
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: laser0002_59
+      rect:
+        serializedVersion: 2
+        x: 1181
+        y: 111
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5343b024fc1d12680800000000000000
+      internalID: -8781507110299290571
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: laser0002_60
+      rect:
+        serializedVersion: 2
+        x: 1188
+        y: 109
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 45e6e09b80c50ed20800000000000000
+      internalID: 3305743319024168532
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: laser0002_61
+      rect:
+        serializedVersion: 2
+        x: 1193
+        y: 99
+        width: 28
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1102a81731afb78b0800000000000000
+      internalID: -5153250387179200495
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: laser0002_62
+      rect:
+        serializedVersion: 2
+        x: 1220
+        y: 98
+        width: 15
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3a7f247b628789200800000000000000
+      internalID: 187031492214585251
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: laser0002_63
+      rect:
+        serializedVersion: 2
+        x: 1238
+        y: 102
+        width: 24
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0624e54248cd7dd70800000000000000
+      internalID: 9067958834837733984
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: laser0002_64
+      rect:
+        serializedVersion: 2
+        x: 1265
+        y: 100
+        width: 23
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 36f8aade204289120800000000000000
+      internalID: 2420724394707554147
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: laser0002_65
+      rect:
+        serializedVersion: 2
+        x: 1286
+        y: 103
+        width: 18
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2244cae43dc404990800000000000000
+      internalID: -7403833316955372510
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: laser0002_66
+      rect:
+        serializedVersion: 2
+        x: 1304
+        y: 100
+        width: 20
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9e523c6ae4dfedea0800000000000000
+      internalID: -5845956752033241623
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: laser0002_67
+      rect:
+        serializedVersion: 2
+        x: 1323
+        y: 102
+        width: 34
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ec8f17f847410e7b0800000000000000
+      internalID: -5197131479130179378
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: laser0002_68
+      rect:
+        serializedVersion: 2
+        x: 1341
+        y: 111
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 668fc23cd1b2f9b20800000000000000
+      internalID: 3143278471756445798
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: laser0002_69
+      rect:
+        serializedVersion: 2
+        x: 1357
+        y: 98
+        width: 12
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a3dd38f7d4c428a00800000000000000
+      internalID: 757251583087205690
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: laser0002_70
+      rect:
+        serializedVersion: 2
+        x: 1367
+        y: 102
+        width: 24
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 24fc79aa276585a60800000000000000
+      internalID: 7662969816459235138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: laser0002_71
+      rect:
+        serializedVersion: 2
+        x: 1391
+        y: 103
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1445d5a937394e960800000000000000
+      internalID: 7630385793392792641
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: laser0002_72
+      rect:
+        serializedVersion: 2
+        x: 1399
+        y: 101
+        width: 15
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ca678a11bbe85f1f0800000000000000
+      internalID: -1011745607168526676
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: laser0002_73
+      rect:
+        serializedVersion: 2
+        x: 1414
+        y: 98
+        width: 31
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e4017a00f05b399d0800000000000000
+      internalID: -2768670269862637490
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: laser0002_74
+      rect:
+        serializedVersion: 2
+        x: 1446
+        y: 98
+        width: 26
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 74439aad3c34b1700800000000000000
+      internalID: 512077491102889031
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: laser0002_75
+      rect:
+        serializedVersion: 2
+        x: 1467
+        y: 113
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1b6e35acad262e610800000000000000
+      internalID: 1648989105407911601
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: laser0002_76
+      rect:
+        serializedVersion: 2
+        x: 1469
+        y: 99
+        width: 67
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5ea90a5179e15ae70800000000000000
+      internalID: 9125733854187920101
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: laser0002_77
+      rect:
+        serializedVersion: 2
+        x: 1508
+        y: 112
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a095f8eae2c34f360800000000000000
+      internalID: 7202447875267057930
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: laser0002_78
+      rect:
+        serializedVersion: 2
+        x: 1532
+        y: 101
+        width: 11
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8ce019b969eec3730800000000000000
+      internalID: 3980318501311155912
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: laser0002_79
+      rect:
+        serializedVersion: 2
+        x: 1543
+        y: 97
+        width: 52
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 78085c3537551adb0800000000000000
+      internalID: -4782447375475703673
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: laser0002_80
+      rect:
+        serializedVersion: 2
+        x: 1545
+        y: 112
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5961893c320ed1a60800000000000000
+      internalID: 7646514186554971797
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: laser0002_81
+      rect:
+        serializedVersion: 2
+        x: 1605
+        y: 111
+        width: 14
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c388896d545bcc550800000000000000
+      internalID: 6182515700030539836
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: laser0002_82
+      rect:
+        serializedVersion: 2
+        x: 1619
+        y: 98
+        width: 29
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 49334369d5caf9060800000000000000
+      internalID: 6962473066890015636
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: laser0002_83
+      rect:
+        serializedVersion: 2
+        x: 1648
+        y: 101
+        width: 30
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b0fdb1ef065a2cab0800000000000000
+      internalID: -4989243601174405365
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: laser0002_84
+      rect:
+        serializedVersion: 2
+        x: 1678
+        y: 111
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ea1f4e4da3eeb0fc0800000000000000
+      internalID: -3527463946667363922
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: laser0002_85
+      rect:
+        serializedVersion: 2
+        x: 1684
+        y: 103
+        width: 18
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b0dc7235bb58e2fb0800000000000000
+      internalID: -4670648723936129781
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: laser0002_86
+      rect:
+        serializedVersion: 2
+        x: 1702
+        y: 106
+        width: 9
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 37152666dd4c792b0800000000000000
+      internalID: -5577773158290534029
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: laser0002_87
+      rect:
+        serializedVersion: 2
+        x: 1710
+        y: 108
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5c944d64715e48ff0800000000000000
+      internalID: -34651008976795195
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: laser0002_88
+      rect:
+        serializedVersion: 2
+        x: 1716
+        y: 102
+        width: 11
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2d8e52f91a449bae0800000000000000
+      internalID: -1533118737192458030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: laser0002_89
+      rect:
+        serializedVersion: 2
+        x: 1728
+        y: 100
+        width: 31
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 645f23d431e6f4070800000000000000
+      internalID: 8092808084586689862
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: laser0002_90
+      rect:
+        serializedVersion: 2
+        x: 1758
+        y: 102
+        width: 12
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8171ea525dbc1f7c0800000000000000
+      internalID: -4039223274453985512
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: laser0002_91
+      rect:
+        serializedVersion: 2
+        x: 1774
+        y: 100
+        width: 22
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1a71845a2561de860800000000000000
+      internalID: 7560723893641025441
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: laser0002_92
+      rect:
+        serializedVersion: 2
+        x: 1794
+        y: 112
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3fc775515126a3d10800000000000000
+      internalID: 2106103618441018611
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: laser0002_93
+      rect:
+        serializedVersion: 2
+        x: 1798
+        y: 105
+        width: 16
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8f7ee893a3281db50800000000000000
+      internalID: 6616212514169350136
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: laser0002_94
+      rect:
+        serializedVersion: 2
+        x: 1811
+        y: 110
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 347cf8f6c0424dd90800000000000000
+      internalID: -7073989478862305469
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: laser0002_95
+      rect:
+        serializedVersion: 2
+        x: 1820
+        y: 98
+        width: 21
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b3c98851f91145f70800000000000000
+      internalID: 9174977715819289659
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: laser0002_96
+      rect:
+        serializedVersion: 2
+        x: 1837
+        y: 108
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fe8d659f48c4660b0800000000000000
+      internalID: -5735812941407135505
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: laser0002_97
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 99
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6a90bfb4e9fe975a0800000000000000
+      internalID: -6522919122110838362
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: laser0002_98
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 100
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6eb9bbf93135ae690800000000000000
+      internalID: -7572148479720711194
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: laser0002_99
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 105
+        width: 11
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4ed28dc1f1554e710800000000000000
+      internalID: 1721594549678648804
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: laser0002_100
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 99
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2f7e24ab2ca0f5780800000000000000
+      internalID: -8692216924336887822
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: laser0002_101
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 104
+        width: 14
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a52f80df3031f8ba0800000000000000
+      internalID: -6084623663703199142
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: laser0002_102
+      rect:
+        serializedVersion: 2
+        x: 158
+        y: 103
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 66531e010965071c0800000000000000
+      internalID: -4508008050239392410
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: laser0002_103
+      rect:
+        serializedVersion: 2
+        x: 243
+        y: 99
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bc30e50c826232b80800000000000000
+      internalID: -8420844921784761397
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: laser0002_104
+      rect:
+        serializedVersion: 2
+        x: 252
+        y: 99
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b975a986a5dd871c0800000000000000
+      internalID: -4505608046812440677
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: laser0002_105
+      rect:
+        serializedVersion: 2
+        x: 327
+        y: 102
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0e40e08ee391b36f0800000000000000
+      internalID: -703941158781451040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: laser0002_106
+      rect:
+        serializedVersion: 2
+        x: 374
+        y: 105
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: affd71450d5723c80800000000000000
+      internalID: -8344477621939609606
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: laser0002_107
+      rect:
+        serializedVersion: 2
+        x: 380
+        y: 99
+        width: 7
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 96bc59434530ef630800000000000000
+      internalID: 3962608382326983529
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: laser0002_108
+      rect:
+        serializedVersion: 2
+        x: 387
+        y: 99
+        width: 9
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f96718955b1b76d80800000000000000
+      internalID: -8257435999311661409
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: laser0002_109
+      rect:
+        serializedVersion: 2
+        x: 405
+        y: 101
+        width: 19
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e2d0e301d6a004850800000000000000
+      internalID: 6359094137387355438
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: laser0002_110
+      rect:
+        serializedVersion: 2
+        x: 413
+        y: 98
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 23d80cbaafb179400800000000000000
+      internalID: 330763861072317746
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: laser0002_111
+      rect:
+        serializedVersion: 2
+        x: 423
+        y: 105
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c1410fc0d42e16730800000000000000
+      internalID: 3990719565384389660
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: laser0002_112
+      rect:
+        serializedVersion: 2
+        x: 470
+        y: 99
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 76e454a3ce88c6750800000000000000
+      internalID: 6299560526955761255
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: laser0002_113
+      rect:
+        serializedVersion: 2
+        x: 628
+        y: 100
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 82409b702f2a78090800000000000000
+      internalID: -8032272249996639192
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: laser0002_114
+      rect:
+        serializedVersion: 2
+        x: 683
+        y: 101
+        width: 15
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3f88dcd34584dac60800000000000000
+      internalID: 7830994853718493427
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: laser0002_115
+      rect:
+        serializedVersion: 2
+        x: 719
+        y: 97
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0c69f4c95f1ff8020800000000000000
+      internalID: 2346359968075060928
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: laser0002_116
+      rect:
+        serializedVersion: 2
+        x: 779
+        y: 98
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0bf0623db976cb1d0800000000000000
+      internalID: -3333675705200930896
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: laser0002_117
+      rect:
+        serializedVersion: 2
+        x: 813
+        y: 99
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 72edddd4cc635d890800000000000000
+      internalID: -7433975358797521369
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: laser0002_118
+      rect:
+        serializedVersion: 2
+        x: 831
+        y: 103
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c07bf431496ec1c40800000000000000
+      internalID: 5484511969883961100
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: laser0002_119
+      rect:
+        serializedVersion: 2
+        x: 1030
+        y: 97
+        width: 15
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7988d1f41dccec830800000000000000
+      internalID: 4093434310673926295
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: laser0002_120
+      rect:
+        serializedVersion: 2
+        x: 1068
+        y: 101
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4b4cb01f7927eb450800000000000000
+      internalID: 6106444141670679732
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: laser0002_121
+      rect:
+        serializedVersion: 2
+        x: 1096
+        y: 98
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b4408d484980adf80800000000000000
+      internalID: -8081137147386002357
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: laser0002_122
+      rect:
+        serializedVersion: 2
+        x: 1178
+        y: 98
+        width: 11
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 95e8b2fdb0bf77520800000000000000
+      internalID: 2699902530039287385
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: laser0002_123
+      rect:
+        serializedVersion: 2
+        x: 1234
+        y: 105
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a3b814a5115186f30800000000000000
+      internalID: 4568924986240240442
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: laser0002_124
+      rect:
+        serializedVersion: 2
+        x: 1257
+        y: 103
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 76462e0d3777100f0800000000000000
+      internalID: -1152508690320694169
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: laser0002_125
+      rect:
+        serializedVersion: 2
+        x: 1320
+        y: 98
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d5a1226fd21287480800000000000000
+      internalID: -8901328182211110307
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: laser0002_126
+      rect:
+        serializedVersion: 2
+        x: 1327
+        y: 99
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c0f0900c0351976e0800000000000000
+      internalID: -1839415673679704308
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: laser0002_127
+      rect:
+        serializedVersion: 2
+        x: 1520
+        y: 98
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 23a9d5a9622dfe720800000000000000
+      internalID: 2877749750153452082
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: laser0002_128
+      rect:
+        serializedVersion: 2
+        x: 1592
+        y: 104
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 416e406ec3f44bc50800000000000000
+      internalID: 6680051270273000980
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: laser0002_129
+      rect:
+        serializedVersion: 2
+        x: 1597
+        y: 100
+        width: 14
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 644e9658b029b9be0800000000000000
+      internalID: -1469420275225729978
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: laser0002_130
+      rect:
+        serializedVersion: 2
+        x: 1615
+        y: 99
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 164ed831789bcbae0800000000000000
+      internalID: -1532145783413021599
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: laser0002_131
+      rect:
+        serializedVersion: 2
+        x: 1678
+        y: 104
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fc494054d5a495fb0800000000000000
+      internalID: -4658610575087725361
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: laser0002_132
+      rect:
+        serializedVersion: 2
+        x: 1769
+        y: 99
+        width: 9
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8886f6ef6ed48eb40800000000000000
+      internalID: 5469707401947998344
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: laser0002_133
+      rect:
+        serializedVersion: 2
+        x: 1790
+        y: 99
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2d9a7100cfdb23a20800000000000000
+      internalID: 3040701588459465170
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: laser0002_134
+      rect:
+        serializedVersion: 2
+        x: 1815
+        y: 100
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aee9e6a1921851420800000000000000
+      internalID: 2600126373413428970
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: laser0002_135
+      rect:
+        serializedVersion: 2
+        x: 369
+        y: 98
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8b44e74bb8c394330800000000000000
+      internalID: 3695551539960497336
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: laser0002_136
+      rect:
+        serializedVersion: 2
+        x: 1176
+        y: 98
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ac2f574ce810080e0800000000000000
+      internalID: -2269812499501681974
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: laser0002_137
+      rect:
+        serializedVersion: 2
+        x: 1708
+        y: 98
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9bb77aa01253477e0800000000000000
+      internalID: -1768730337620821063
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      laser0002_0: -5824615357312188755
+      laser0002_1: -8728884570443005570
+      laser0002_10: 493995349770527948
+      laser0002_100: -8692216924336887822
+      laser0002_101: -6084623663703199142
+      laser0002_102: -4508008050239392410
+      laser0002_103: -8420844921784761397
+      laser0002_104: -4505608046812440677
+      laser0002_105: -703941158781451040
+      laser0002_106: -8344477621939609606
+      laser0002_107: 3962608382326983529
+      laser0002_108: -8257435999311661409
+      laser0002_109: 6359094137387355438
+      laser0002_11: -6687728929177305813
+      laser0002_110: 330763861072317746
+      laser0002_111: 3990719565384389660
+      laser0002_112: 6299560526955761255
+      laser0002_113: -8032272249996639192
+      laser0002_114: 7830994853718493427
+      laser0002_115: 2346359968075060928
+      laser0002_116: -3333675705200930896
+      laser0002_117: -7433975358797521369
+      laser0002_118: 5484511969883961100
+      laser0002_119: 4093434310673926295
+      laser0002_12: -4457690578729430306
+      laser0002_120: 6106444141670679732
+      laser0002_121: -8081137147386002357
+      laser0002_122: 2699902530039287385
+      laser0002_123: 4568924986240240442
+      laser0002_124: -1152508690320694169
+      laser0002_125: -8901328182211110307
+      laser0002_126: -1839415673679704308
+      laser0002_127: 2877749750153452082
+      laser0002_128: 6680051270273000980
+      laser0002_129: -1469420275225729978
+      laser0002_13: 4863931997075719798
+      laser0002_130: -1532145783413021599
+      laser0002_131: -4658610575087725361
+      laser0002_132: 5469707401947998344
+      laser0002_133: 3040701588459465170
+      laser0002_134: 2600126373413428970
+      laser0002_135: 3695551539960497336
+      laser0002_136: -2269812499501681974
+      laser0002_137: -1768730337620821063
+      laser0002_14: -1482652577095484166
+      laser0002_15: -7684493059969123878
+      laser0002_16: -3935369075715231169
+      laser0002_17: 4636728730183779346
+      laser0002_18: -2006281233200091696
+      laser0002_19: -343810198678035819
+      laser0002_2: -3768053657232685507
+      laser0002_20: -7416148167878094291
+      laser0002_21: -8934568190404929975
+      laser0002_22: 5368016908111570699
+      laser0002_23: 8785231362772454983
+      laser0002_24: 7952041646204837757
+      laser0002_25: 7402031726754953411
+      laser0002_26: 1460757198049296898
+      laser0002_27: -5073957883537336786
+      laser0002_28: 1764808110714937565
+      laser0002_29: 447591092855022871
+      laser0002_3: -6510772737711158560
+      laser0002_30: 3617316943884039691
+      laser0002_31: 7296518741692853989
+      laser0002_32: -2627373588800279947
+      laser0002_33: -5553764387517296646
+      laser0002_34: 7945954924583527370
+      laser0002_35: 8408115683921503850
+      laser0002_36: -231553998478637249
+      laser0002_37: 7354411332031790112
+      laser0002_38: 2039578796980142346
+      laser0002_39: -6107786972449058675
+      laser0002_4: 6117557110293938322
+      laser0002_40: 920450521213565001
+      laser0002_41: 3606609337162685213
+      laser0002_42: 4317737890017727338
+      laser0002_43: -5995476966873386959
+      laser0002_44: 388285298318475226
+      laser0002_45: 1831124313455167542
+      laser0002_46: 3581486889600531705
+      laser0002_47: -4054371884495362296
+      laser0002_48: 8725195710932442905
+      laser0002_49: 1737188278259707674
+      laser0002_5: 7918988153505510878
+      laser0002_50: 3896698509307065439
+      laser0002_51: 2606474269377254306
+      laser0002_52: -5114147367279516694
+      laser0002_53: 3149754648247612817
+      laser0002_54: -4014959768905871019
+      laser0002_55: 3326821352697499660
+      laser0002_56: 8125847170548505168
+      laser0002_57: -6836508469117102516
+      laser0002_58: -6890701662026971449
+      laser0002_59: -8781507110299290571
+      laser0002_6: 2141811577589360830
+      laser0002_60: 3305743319024168532
+      laser0002_61: -5153250387179200495
+      laser0002_62: 187031492214585251
+      laser0002_63: 9067958834837733984
+      laser0002_64: 2420724394707554147
+      laser0002_65: -7403833316955372510
+      laser0002_66: -5845956752033241623
+      laser0002_67: -5197131479130179378
+      laser0002_68: 3143278471756445798
+      laser0002_69: 757251583087205690
+      laser0002_7: -2894144426636288486
+      laser0002_70: 7662969816459235138
+      laser0002_71: 7630385793392792641
+      laser0002_72: -1011745607168526676
+      laser0002_73: -2768670269862637490
+      laser0002_74: 512077491102889031
+      laser0002_75: 1648989105407911601
+      laser0002_76: 9125733854187920101
+      laser0002_77: 7202447875267057930
+      laser0002_78: 3980318501311155912
+      laser0002_79: -4782447375475703673
+      laser0002_8: -390998629319598293
+      laser0002_80: 7646514186554971797
+      laser0002_81: 6182515700030539836
+      laser0002_82: 6962473066890015636
+      laser0002_83: -4989243601174405365
+      laser0002_84: -3527463946667363922
+      laser0002_85: -4670648723936129781
+      laser0002_86: -5577773158290534029
+      laser0002_87: -34651008976795195
+      laser0002_88: -1533118737192458030
+      laser0002_89: 8092808084586689862
+      laser0002_9: 420119725375816678
+      laser0002_90: -4039223274453985512
+      laser0002_91: 7560723893641025441
+      laser0002_92: 2106103618441018611
+      laser0002_93: 6616212514169350136
+      laser0002_94: -7073989478862305469
+      laser0002_95: 9174977715819289659
+      laser0002_96: -5735812941407135505
+      laser0002_97: -6522919122110838362
+      laser0002_98: -7572148479720711194
+      laser0002_99: 1721594549678648804
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

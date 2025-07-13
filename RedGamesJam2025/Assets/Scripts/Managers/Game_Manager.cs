@@ -10,6 +10,8 @@ public class Game_Manager : MonoBehaviour
     public int currentDistance = 0;
     public int currentCoins = 0;
     public int currentTickets = 0;
+
+    public int boarding_pass = 0;
     public int highScore = 0;
     public int totalCoins = 0;
     public int totalTickets = 0;
@@ -81,6 +83,11 @@ public class Game_Manager : MonoBehaviour
         {
             landmarkManager.OnCoinsUpdated(amount);
         }
+    }
+
+    public void AddBoardingPass(int amt)
+    {
+        boarding_pass += amt;
     }
 
         

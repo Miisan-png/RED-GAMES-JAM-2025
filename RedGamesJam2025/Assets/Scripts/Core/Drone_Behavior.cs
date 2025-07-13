@@ -11,6 +11,10 @@ public class ParallaxDroneBehavior : MonoBehaviour
     public Transform warningIndicator;
     public SpriteRenderer warningRenderer;
     public float warningMoveRange = 2f;
+
+    private Player_Animation_System animSystem;
+    private bool hasExploded = false;
+
     public float warningDuration = 2f;
     public float lockShakeDuration = 0.8f;
     public Color warningColor = Color.red;
@@ -46,6 +50,8 @@ public class ParallaxDroneBehavior : MonoBehaviour
             originalWarningColor = warningRenderer.color;
             warningRenderer.enabled = false;
         }
+
+        animSystem = GetComponent<Player_Animation_System>();
         
         GetComponent<SpriteRenderer>().enabled = false;
         GetComponent<Collider2D>().enabled = false;

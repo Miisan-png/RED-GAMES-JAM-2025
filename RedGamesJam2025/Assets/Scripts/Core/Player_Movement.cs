@@ -10,6 +10,10 @@ public class Player_Movement : MonoBehaviour
     public float gravity = 25f;
     public float maxVerticalSpeed = 15f;
     
+    [Header("Starting Position")]
+    public float startingXOffset = 0f; // Offset from current position (negative = left, positive = right)
+    public bool setStartingPositionOnStart = true;
+    
     [Header("Speed Increase Settings")]
     public float speedIncreaseRate = 0.5f;
     public float maxSpeed = 20f;
@@ -22,6 +26,7 @@ public class Player_Movement : MonoBehaviour
     
     [Header("Height Bounds")]
     public bool useHeightBounds = true;
+    public bool autoCalculateHeightBounds = false; // NEW: Toggle for auto-calculation
     public float minHeight = -5f;
     public float maxHeight = 5f;
     
@@ -49,12 +54,26 @@ public class Player_Movement : MonoBehaviour
         // NEW: Get health component
         playerHealth = GetComponent<Player_Health_Behavior>();
         
-        if (useHeightBounds && mainCamera != null)
+        // NEW: Set starting position
+        if (setStartingPositionOnStart)
+        {
+            SetStartingPosition();
+        }
+        
+        // Only auto-calculate height bounds if enabled
+        if (useHeightBounds && autoCalculateHeightBounds && mainCamera != null)
         {
             float screenHeight = mainCamera.orthographicSize * 2f;
             maxHeight = mainCamera.transform.position.y + screenHeight * 0.4f;
             minHeight = mainCamera.transform.position.y - screenHeight * 0.4f;
         }
+    }
+    
+    void SetStartingPosition()
+    {
+        Vector3 startPos = transform.position;
+        startPos.x += startingXOffset; // Simply add the offset to current position
+        transform.position = startPos;
     }
     
     void Update()
@@ -67,10 +86,10 @@ public class Player_Movement : MonoBehaviour
 
         if (isMoving)
         {
-            if (rb.linearVelocity.y > 0.1f || rb.linearVelocity.y < -0.1f)
-                animator.Play("fly");
-            else
-                animator.Play("walk");
+            if (rb.linearVelocity.y > 0.1f || rb.linearVelocity.y < -0.1f)
+                animator.Play("fly");
+            else
+                animator.Play("walk");
         }
 
         
@@ -187,10 +206,26 @@ public class Player_Movement : MonoBehaviour
     {
         ResetSpeed();
         StopMovement();
+        
+        // Reset to starting position
+        if (setStartingPositionOnStart)
+        {
+            SetStartingPosition();
+        }
     }
     
     public bool IsMoving()
     {
         return isMoving;
+    }
+    
+    // NEW: Method to manually set starting position (useful for respawning)
+    public void SetStartingPosition(float customOffset = float.NaN)
+    {
+        float offsetToUse = float.IsNaN(customOffset) ? startingXOffset : customOffset;
+        
+        Vector3 startPos = transform.position;
+        startPos.x += offsetToUse; // Simply add offset to current position
+        transform.position = startPos;
     }
 }
