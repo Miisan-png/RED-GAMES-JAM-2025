@@ -40,43 +40,42 @@ public class Parallax_Node : MonoBehaviour
         }
     }
 
-    void LateUpdate()
+void LateUpdate()
+{
+    if (cameraTransform == null || layers == null) return;
+
+    Vector3 deltaMovement = cameraTransform.position - lastCameraPosition;
+    lastCameraPosition = cameraTransform.position;
+
+    foreach (var layer in layers)
     {
-        if (cameraTransform == null || layers == null) return;
+        if (layer.transform == null) continue;
 
-        Vector3 deltaMovement = cameraTransform.position - lastCameraPosition;
-        lastCameraPosition = cameraTransform.position;
+        Vector3 parallaxMovement = new Vector3(
+            deltaMovement.x * layer.parallaxMultiplier.x,
+            deltaMovement.y * layer.parallaxMultiplier.y,
+            0
+        );
 
-        foreach (var layer in layers)
+        layer.transform.position += parallaxMovement;
+
+        if (layer.infiniteHorizontal)
         {
-            if (layer.transform == null) continue;
-
-            Vector3 parallaxMovement = new Vector3(
-                deltaMovement.x * layer.parallaxMultiplier.x,
-                deltaMovement.y * layer.parallaxMultiplier.y,
-                0
-            );
-
-            layer.transform.position += parallaxMovement;
-
-            if (layer.infiniteHorizontal)
+            if (layer.spriteWidth > 0.001f && Mathf.Abs(cameraTransform.position.x - layer.transform.position.x) >= layer.spriteWidth)
             {
-                float temp = (cameraTransform.position.x * (1 - layer.parallaxMultiplier.x));
-                if (Mathf.Abs(cameraTransform.position.x - layer.transform.position.x) >= layer.spriteWidth)
-                {
-                    float offsetPositionX = (cameraTransform.position.x - layer.transform.position.x) % layer.spriteWidth;
-                    layer.transform.position = new Vector3(cameraTransform.position.x - offsetPositionX, layer.transform.position.y, layer.transform.position.z);
-                }
+                float offsetPositionX = (cameraTransform.position.x - layer.transform.position.x) % layer.spriteWidth;
+                layer.transform.position = new Vector3(cameraTransform.position.x - offsetPositionX, layer.transform.position.y, layer.transform.position.z);
             }
+        }
 
-            if (layer.infiniteVertical)
+        if (layer.infiniteVertical)
+        {
+            if (layer.spriteHeight > 0.001f && Mathf.Abs(cameraTransform.position.y - layer.transform.position.y) >= layer.spriteHeight)
             {
-                 if (Mathf.Abs(cameraTransform.position.y - layer.transform.position.y) >= layer.spriteHeight)
-                {
-                    float offsetPositionY = (cameraTransform.position.y - layer.transform.position.y) % layer.spriteHeight;
-                    layer.transform.position = new Vector3(layer.transform.position.x, cameraTransform.position.y - offsetPositionY, layer.transform.position.z);
-                }
+                float offsetPositionY = (cameraTransform.position.y - layer.transform.position.y) % layer.spriteHeight;
+                layer.transform.position = new Vector3(layer.transform.position.x, cameraTransform.position.y - offsetPositionY, layer.transform.position.z);
             }
         }
     }
+}
 }

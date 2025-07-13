@@ -9,6 +9,8 @@ public class Player_Movement : MonoBehaviour
     private Player_Animation_System animator;
     public float gravity = 25f;
     public float maxVerticalSpeed = 15f;
+
+    public GameObject player_shadow;
     
     [Header("Starting Position")]
     public float startingXOffset = 0f; // Offset from current position (negative = left, positive = right)
@@ -78,7 +80,6 @@ public class Player_Movement : MonoBehaviour
     
     void Update()
     {
-        // NEW: Only handle input and movement if alive
         if (playerHealth != null && !playerHealth.IsAlive())
         {
             return; // Don't process movement if dead
@@ -92,7 +93,7 @@ public class Player_Movement : MonoBehaviour
                 animator.Play("walk");
         }
 
-        
+        UpdateShadow();
         HandleInput();
         HandleMovement();
         HandleJetpack();
@@ -148,6 +149,22 @@ public class Player_Movement : MonoBehaviour
         
         rb.linearVelocity = new Vector2(rb.linearVelocity.x, Mathf.Clamp(rb.linearVelocity.y, -maxVerticalSpeed, maxVerticalSpeed));
     }
+
+    void UpdateShadow()
+{
+    if (isJetpackActive)
+    {
+        Vector3 shadowPos = player_shadow.transform.localPosition;
+        shadowPos.y = 0f;
+        player_shadow.transform.localPosition = shadowPos;
+        player_shadow.transform.localScale = Vector3.Lerp(player_shadow.transform.localScale, Vector3.one * 0.8f, Time.deltaTime * 10f);
+    }
+    else
+    {
+        player_shadow.transform.localScale = Vector3.Lerp(player_shadow.transform.localScale, Vector3.one, Time.deltaTime * 10f);
+    }
+}
+
     
     void HandleBounds()
     {
