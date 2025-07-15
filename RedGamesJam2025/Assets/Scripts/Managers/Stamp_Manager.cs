@@ -24,6 +24,7 @@ public class Stamp_Manager : MonoBehaviour
     void Start()
     {
         SetupStampManager();
+        ResetStampManager();
     }
 
     void SetupStampManager()
@@ -67,7 +68,7 @@ public class Stamp_Manager : MonoBehaviour
     {
         if (Game_Manager.Instance != null)
         {
-            int passes = Game_Manager.Instance.boarding_pass;
+            int passes = Game_Manager.Instance.boardingPass;
 
             // Check if we've collected 3 boarding passes and haven't triggered yet
             if (passes >= 3 && !hasTriggered)
@@ -76,10 +77,12 @@ public class Stamp_Manager : MonoBehaviour
                 hasTriggered = true;
             }
 
-            // Reset trigger when boarding passes reset
-            if (passes < lastPassCount && passes == 0)
+            // Reset trigger when boarding passes decrease (after each stamp sequence)
+            // This allows the system to trigger again for the next country
+            if (passes < lastPassCount)
             {
                 hasTriggered = false;
+                Debug.Log($"Reset hasTriggered - passes decreased from {lastPassCount} to {passes}");
             }
 
             lastPassCount = passes;
@@ -109,6 +112,15 @@ public class Stamp_Manager : MonoBehaviour
 
         // Show stamp
         stampSequence.AppendCallback(() => ShowCurrentStamp());
+
+        // After the stamp sequence is complete, reset boarding passes for next country
+        stampSequence.OnComplete(() => {
+            if (Game_Manager.Instance != null)
+            {
+                Game_Manager.Instance.boardingPass = 0; // Reset boarding passes
+                Debug.Log("Boarding passes reset to 0 for next country");
+            }
+        });
     }
 
     void TriggerScreenFlash()
@@ -146,57 +158,61 @@ public class Stamp_Manager : MonoBehaviour
     }
 
     void ShowCurrentStamp()
+{
+    if (stampAnimationController == null)
     {
-        if (stampAnimationController == null)
-        {
-            Debug.LogError("No stamp animation controller!");
-            return;
-        }
-
-        if (currentCountryIndex >= stampAnimationController.GetStampCount())
-        {
-            Debug.LogWarning($"Current country index {currentCountryIndex} exceeds stamp count {stampAnimationController.GetStampCount()}");
-            return;
-        }
-
-        Debug.Log($"Showing stamp for country index: {currentCountryIndex}");
-        stampAnimationController.ShowStamp(currentCountryIndex);
+        Debug.LogError("No stamp animation controller!");
+        return;
     }
+
+    if (currentCountryIndex >= stampAnimationController.GetStampCount())
+    {
+        Debug.LogWarning($"Current country index {currentCountryIndex} exceeds stamp count {stampAnimationController.GetStampCount()}");
+        return;
+    }
+
+    Debug.Log($"Showing stamp for country index: {currentCountryIndex}");
+    stampAnimationController.ShowStamp(currentCountryIndex);
+
+    // ✅ Increment here AFTER stamp and node match
+    currentCountryIndex++;
+}
+
 
     void UpdateCountryNodes()
+{
+    if (countryNodes == null || countryNodes.Length == 0) 
     {
-        if (countryNodes == null || countryNodes.Length == 0) 
-        {
-            Debug.Log("No country nodes to update");
-            return;
-        }
-
-        Debug.Log($"Updating country nodes - current index: {currentCountryIndex}");
-
-        // Disable default node when first country is unlocked
-        if (currentCountryIndex == 0 && defaultNode != null)
-        {
-            defaultNode.SetActive(false);
-            Debug.Log("Disabled default node");
-        }
-
-        // Disable previous country node (if not the first unlock)
-        if (currentCountryIndex > 0 && currentCountryIndex <= countryNodes.Length && countryNodes[currentCountryIndex - 1] != null)
-        {
-            countryNodes[currentCountryIndex - 1].SetActive(false);
-            Debug.Log($"Disabled country node {currentCountryIndex - 1}");
-        }
-
-        // Enable new country node
-        if (currentCountryIndex < countryNodes.Length && countryNodes[currentCountryIndex] != null)
-        {
-            countryNodes[currentCountryIndex].SetActive(true);
-            Debug.Log($"Enabled country node {currentCountryIndex}");
-        }
-
-        // Move to next country index
-        currentCountryIndex++;
+        Debug.Log("No country nodes to update");
+        return;
     }
+
+    Debug.Log($"Updating country nodes - current index: {currentCountryIndex}");
+
+    // Disable default node when first country is unlocked
+    if (currentCountryIndex == 0 && defaultNode != null)
+    {
+        defaultNode.SetActive(false);
+        Debug.Log("Disabled default node");
+    }
+
+    // Disable previous country node (if not the first unlock)
+    if (currentCountryIndex > 0 && currentCountryIndex <= countryNodes.Length && countryNodes[currentCountryIndex - 1] != null)
+    {
+        countryNodes[currentCountryIndex - 1].SetActive(false);
+        Debug.Log($"Disabled country node {currentCountryIndex - 1}");
+    }
+
+    // Enable new country node
+    if (currentCountryIndex < countryNodes.Length && countryNodes[currentCountryIndex] != null)
+    {
+        countryNodes[currentCountryIndex].SetActive(true);
+        Debug.Log($"Enabled country node {currentCountryIndex}");
+    }
+
+    // ✅ Move to next index after the stamp has shown
+    // currentCountryIndex++; ❌ REMOVE THIS LINE
+}
 
     // Public methods for manual control
     public void ManualTriggerStamp()
@@ -221,6 +237,12 @@ public class Stamp_Manager : MonoBehaviour
         hasTriggered = false;
         currentCountryIndex = 0;
         lastPassCount = 0;
+
+        // Reset boarding passes in Game_Manager
+        if (Game_Manager.Instance != null)
+        {
+            Game_Manager.Instance.boardingPass = 0;
+        }
 
         // Reset animation controller
         if (stampAnimationController != null)
@@ -258,5 +280,11 @@ public class Stamp_Manager : MonoBehaviour
     public void TestReset()
     {
         ResetStampManager();
+    }
+
+    // Public getter for current country index
+    public int GetCurrentCountryIndex()
+    {
+        return currentCountryIndex;
     }
 }

@@ -8,6 +8,10 @@ TagManager:
   - ground
   - prop
   - Laser
+  - TicketsUI
+  - CoinsUI
+  - ScoreUI
+  - BestScoreUI
   layers:
   - Default
   - TransparentFX

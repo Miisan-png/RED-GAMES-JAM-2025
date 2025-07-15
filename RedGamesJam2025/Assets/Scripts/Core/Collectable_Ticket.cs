@@ -12,6 +12,8 @@ public class Collectable_Ticket : MonoBehaviour
     public float jumpHeight = 2f;
     public float rotationAmount = 360f;
 
+
+
     public float rare_float = 30f;
 
     [Header("Particle Effects")]
@@ -34,6 +36,7 @@ public class Collectable_Ticket : MonoBehaviour
             CollectTicket();
         }
     }
+
 
     void CollectTicket()
     {

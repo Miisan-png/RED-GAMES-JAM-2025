@@ -7,6 +7,10 @@ public class Floating_Boarding_Pass : MonoBehaviour
     public float floatSpeed = 2f;
     public float floatAmplitude = 0.5f;
     public float rightwardSpeed = 1f;
+
+    [Header("Options")]
+    public bool shouldRespawn = true;
+
     
     [Header("Lifecycle")]
     public float fadeOutDelay = 10f;
@@ -68,15 +72,16 @@ public class Floating_Boarding_Pass : MonoBehaviour
     
     void Respawn()
     {
-        if (isCollected) return;
-        
+        if (isCollected || !shouldRespawn) return;
+
         transform.position = new Vector3(startPos.x, startPos.y, startPos.z);
         transform.localScale = originalScale;
         boxCollider.enabled = true;
-        
+
         spriteRenderer.DOFade(1f, 0.8f).SetEase(Ease.OutBack);
         transform.DOScale(originalScale, 0.8f).SetEase(Ease.OutBack);
     }
+
     
     void OnTriggerEnter2D(Collider2D other)
     {

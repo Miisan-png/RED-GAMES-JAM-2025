@@ -45,7 +45,7 @@ public class BP_Manager : MonoBehaviour
     {
         if (Game_Manager.Instance != null)
         {
-            int passes = Game_Manager.Instance.boarding_pass;
+            int passes = Game_Manager.Instance.boardingPass;
             if (passes != currentPasses)
             {
                 UpdateBoardingPasses(passes);

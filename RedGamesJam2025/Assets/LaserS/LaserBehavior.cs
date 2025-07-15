@@ -48,12 +48,15 @@ public class LaserBehavior : MonoBehaviour
     
     private Coroutine laserSequence;
     private Coroutine animationCoroutine;
+
+
     
     void Start()
     {
         InitializeLaser();
     }
-    
+
+  
     void InitializeLaser()
     {
         spriteRenderer = GetComponent<SpriteRenderer>();
